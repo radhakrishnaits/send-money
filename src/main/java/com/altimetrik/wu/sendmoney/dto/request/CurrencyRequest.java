@@ -5,6 +5,8 @@ public class CurrencyRequest {
     private String countryCode;
     private String currencyCode;
 
+    private String currency;
+
     private String addedBy;
 
     public String getCountryName() {
@@ -37,5 +39,13 @@ public class CurrencyRequest {
 
     public void setAddedBy(String addedBy) {
         this.addedBy = addedBy;
+    }
+
+    public String getCurrency() {
+        return currency;
+    }
+
+    public void setCurrency(String currency) {
+        this.currency = currency;
     }
 }

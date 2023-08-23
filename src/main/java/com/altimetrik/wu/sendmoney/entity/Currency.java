@@ -14,12 +14,15 @@ public class Currency {
     @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name = "currency_id")
     private Long currencyId;
-    @Column(name = "country_name", unique = true)
-    private String countryName;
+    @Column(name = "country", unique = true)
+    private String country;
     @Column(name = "country_code", unique = true)
     private String countryCode;
     @Column(name = "currency_code")
     private String currencyCode;
+
+    @Column(name = "currency")
+    private String currency;
 
     public Long getCurrencyId() {
         return currencyId;
@@ -29,12 +32,12 @@ public class Currency {
         this.currencyId = currencyId;
     }
 
-    public String getCountryName() {
-        return countryName;
+    public String getCountry() {
+        return country;
     }
 
-    public void setCountryName(String countryName) {
-        this.countryName = countryName;
+    public void setCountry(String country) {
+        this.country = country;
     }
 
     public String getCountryCode() {
@@ -51,5 +54,13 @@ public class Currency {
 
     public void setCurrencyCode(String currencyCode) {
         this.currencyCode = currencyCode;
+    }
+
+    public String getCurrency() {
+        return currency;
+    }
+
+    public void setCurrency(String currency) {
+        this.currency = currency;
     }
 }
