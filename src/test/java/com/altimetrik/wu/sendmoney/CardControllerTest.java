@@ -25,10 +25,10 @@ public class CardControllerTest {
     @Test
     public void testSaveCard() throws Exception{
         CardEntity cardEntity = new CardEntity();
-        cardEntity.setCardNumber("1234567890123456");
-        cardEntity.setCardHolderName("Gokul R");
-        cardEntity.setExpirationDate("12/25");
-        cardEntity.setCvv("000");
+        cardEntity.setCard_number(1234567890123456L);
+        cardEntity.setName_on_card("Gokul R");
+        cardEntity.setCard_expiry("12/25");
+        cardEntity.setStatus("Active");
 
         when(cardRepo.save(Mockito.any(CardEntity.class))).thenReturn(cardEntity);
         mockMvc.perform(post("/api/card")
