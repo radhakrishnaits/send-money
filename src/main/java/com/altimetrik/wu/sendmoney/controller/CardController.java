@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping("/api")
 public class CardController {
+    @Autowired
     private final CardService cardService;
     @Autowired
     public CardController(CardService cardService){
