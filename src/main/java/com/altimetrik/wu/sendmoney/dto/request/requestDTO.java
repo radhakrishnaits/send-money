@@ -1,4 +1,4 @@
-package com.altimetrik.wu.sendmoney.dto;
+package com.altimetrik.wu.sendmoney.dto.request;
 
 public class requestDTO {
     private double fromCurrency;
