@@ -1,13 +1,16 @@
 package com.altimetrik.wu.sendmoney.entity;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
-import javax.persistence.OneToOne;
+import javax.persistence.ManyToMany;
 import javax.persistence.Table;
+import java.util.HashSet;
+import java.util.Set;
 
 @Entity
 @Table(name = "sender_allowed_country")
@@ -26,20 +29,21 @@ public class SenderAllowedCountry {
     @Column(name = "currency")
     private String currencyName;
 
-    @OneToOne
+    @ManyToMany(cascade = CascadeType.DETACH, targetEntity = Currency.class)
     @JoinColumn(name = "currency_id")
-    private Currency currency;
+    private Set<Currency> allowedCountry = new HashSet<>();
 
     public SenderAllowedCountry() {
     }
 
-    public SenderAllowedCountry(String country, String countryCode, String currencyCode, String currencyName, Currency currency) {
+    public SenderAllowedCountry(String country, String countryCode, String currencyCode, String currencyName, Set<Currency> allowedCountry) {
         this.country = country;
         this.countryCode = countryCode;
         this.currencyCode = currencyCode;
         this.currencyName = currencyName;
-        this.currency = currency;
+        this.allowedCountry = allowedCountry;
     }
+
 
     public String getCountry() {
         return country;
@@ -81,12 +85,12 @@ public class SenderAllowedCountry {
         this.currencyName = currencyName;
     }
 
-    public Currency getCurrency() {
-        return currency;
+    public Set<Currency> getAllowedCountry() {
+        return allowedCountry;
     }
 
-    public void setCurrency(Currency currency) {
-        this.currency = currency;
+    public void setAllowedCountry(Set<Currency> allowedCountry) {
+        this.allowedCountry = allowedCountry;
     }
 
     @Override
@@ -97,7 +101,7 @@ public class SenderAllowedCountry {
                 ", countryCode='" + countryCode + '\'' +
                 ", currencyCode='" + currencyCode + '\'' +
                 ", currencyName='" + currencyName + '\'' +
-                ", currency=" + currency +
+                ", allowedCountry=" + allowedCountry +
                 '}';
     }
 }
