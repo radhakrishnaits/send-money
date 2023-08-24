@@ -11,7 +11,7 @@ public class CardEntity {
     @Id
     private int card_id;
     private int user_id;
-    private int card_number;
+    private Long card_number;
     private String card_expiry;
     private String name_on_card;
     private String status;
@@ -34,11 +34,11 @@ public class CardEntity {
         this.user_id = user_id;
     }
 
-    public int getCard_number() {
+    public Long getCard_number() {
         return card_number;
     }
 
-    public void setCard_number(int card_number) {
+    public void setCard_number(Long card_number) {
         this.card_number = card_number;
     }
 
