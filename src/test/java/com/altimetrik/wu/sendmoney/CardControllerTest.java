@@ -2,7 +2,7 @@ package com.altimetrik.wu.sendmoney;
 
 import com.altimetrik.wu.sendmoney.controller.CardController;
 import com.altimetrik.wu.sendmoney.entity.CardEntity;
-import com.altimetrik.wu.sendmoney.repo.CardRepo;
+import com.altimetrik.wu.sendmoney.repository.CardRepo;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.junit.jupiter.api.Test;
 import org.mockito.Mockito;

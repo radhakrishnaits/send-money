@@ -1,4 +1,4 @@
-package com.altimetrik.wu.sendmoney.repo;
+package com.altimetrik.wu.sendmoney.repository;
 
 import com.altimetrik.wu.sendmoney.entity.CardEntity;
 import org.springframework.data.jpa.repository.JpaRepository;
