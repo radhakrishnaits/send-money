@@ -14,9 +14,9 @@ public class Currency {
     @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name = "currency_id")
     private Long currencyId;
-    @Column(name = "country", unique = true)
+    @Column(name = "country")
     private String country;
-    @Column(name = "country_code", unique = true)
+    @Column(name = "country_code")
     private String countryCode;
     @Column(name = "currency_code")
     private String currencyCode;
@@ -62,5 +62,16 @@ public class Currency {
 
     public void setCurrency(String currency) {
         this.currency = currency;
+    }
+
+    @Override
+    public String toString() {
+        return "Currency{" +
+                "currencyId=" + currencyId +
+                ", country='" + country + '\'' +
+                ", countryCode='" + countryCode + '\'' +
+                ", currencyCode='" + currencyCode + '\'' +
+                ", currency='" + currency + '\'' +
+                '}';
     }
 }

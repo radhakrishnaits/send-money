@@ -8,6 +8,7 @@ import java.util.Date;
 
 @Entity
 public class CardEntity {
+    @Id
     private int card_id;
     private int user_id;
     private int card_number;
