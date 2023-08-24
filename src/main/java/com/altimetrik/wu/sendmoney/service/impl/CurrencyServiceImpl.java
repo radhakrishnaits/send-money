@@ -24,7 +24,8 @@ public class CurrencyServiceImpl implements CurrencyService {
                 Currency currency = new Currency();
                 currency.setCurrencyCode(currencyRequest.getCurrencyCode());
                 currency.setCountryCode(currencyRequest.getCountryCode());
-                currency.setCountryName(currencyRequest.getCountryName());
+                currency.setCountry(currencyRequest.getCountryName());
+                currency.setCurrency(currencyRequest.getCurrency());
                 currencyRepository.save(currency);
             });
         }
