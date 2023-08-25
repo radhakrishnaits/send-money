@@ -29,3 +29,6 @@ HELP.md
 .vscode/
 /bin/
 /logs/
+
+
+/send-money.db

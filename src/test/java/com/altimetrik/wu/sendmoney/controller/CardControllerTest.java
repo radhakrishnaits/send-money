@@ -1,4 +1,4 @@
-package com.altimetrik.wu.sendmoney;
+package com.altimetrik.wu.sendmoney.controller;
 
 import com.altimetrik.wu.sendmoney.controller.CardController;
 import com.altimetrik.wu.sendmoney.entity.CardEntity;
