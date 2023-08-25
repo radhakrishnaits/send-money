@@ -42,7 +42,7 @@ public class TransactionController {
             @ApiResponse(code = 404, message = "The resource you were trying to reach is not found")
     })
     @RequestMapping(value = "/transaction/save", method = RequestMethod.POST)
-    ResponseEntity<String> addCurrency(@RequestBody TransactionRequest transactionRequest) {
+    ResponseEntity<String> saveTransaction(@RequestBody TransactionRequest transactionRequest) {
         long mtcn = transactionService.saveTransaction(transactionRequest);
         return ResponseEntity.ok("Transaction was successful. Reference number: " + mtcn);
     }
