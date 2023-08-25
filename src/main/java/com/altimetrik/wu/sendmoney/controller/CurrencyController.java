@@ -8,6 +8,7 @@ import com.altimetrik.wu.sendmoney.service.SenderAllowedCountryService;
 import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiResponse;
 import io.swagger.annotations.ApiResponses;
+import javassist.NotFoundException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -60,7 +61,14 @@ public class CurrencyController {
             @ApiResponse(code = 404, message = "The resource you were trying to reach is not found")
     })
     @GetMapping("/country/{country_code}")
-    public ResponseEntity<List<SenderAllowedCountry>> senderAllowedCountry(@PathVariable(value = "country_code", required = false) String countryCode) {
-        return ResponseEntity.ok(senderAllowedCountryService.getSenderAllowedCountries(countryCode));
+    public ResponseEntity<Object> senderAllowedCountry(@PathVariable(value = "country_code", required = false) String countryCode) throws NotFoundException {
+        List<SenderAllowedCountry> response = null;
+        try {
+            response = senderAllowedCountryService.getSenderAllowedCountries(countryCode);
+        } catch (NotFoundException e) {
+            return ResponseEntity.badRequest().body(e.getMessage());
+        }
+        return ResponseEntity.ok(response);
+
     }
 }

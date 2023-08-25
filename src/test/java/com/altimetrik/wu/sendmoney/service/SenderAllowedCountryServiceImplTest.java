@@ -4,6 +4,7 @@ import com.altimetrik.wu.sendmoney.entity.Currency;
 import com.altimetrik.wu.sendmoney.entity.SenderAllowedCountry;
 import com.altimetrik.wu.sendmoney.repository.SenderAllowedCurrencyRepository;
 import com.altimetrik.wu.sendmoney.service.impl.SenderAllowedCountryServiceImpl;
+import javassist.NotFoundException;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.InjectMocks;
@@ -30,7 +31,7 @@ public class SenderAllowedCountryServiceImplTest {
 
 
     @Test
-    public void testSenderAllowedCurrencyReturnAllowedCurrencyList() {
+    public void testSenderAllowedCurrencyReturnAllowedCurrencyList() throws NotFoundException {
         String countryCode = "IN";
         List<SenderAllowedCountry> givenSenderAllowedCountries = getSenderAllowedCountries();
         when(senderAllowedCurrencyRepository.getSenderAllowedCountryByCountryCode(countryCode)).thenReturn(givenSenderAllowedCountries);
