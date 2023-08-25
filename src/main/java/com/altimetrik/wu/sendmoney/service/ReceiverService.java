@@ -1,11 +1,6 @@
 package com.altimetrik.wu.sendmoney.service;
+import com.altimetrik.wu.sendmoney.dto.ReponseDTO;
 
-import org.springframework.stereotype.Service;
-
-@Service
-public class ReceiverService {
-    public double calculateReceiverAmount(double sendAmount){
-        double receiveAmount = sendAmount;
-        return receiveAmount;
-    }
+public interface ReceiverService {
+    ReponseDTO getReceiverAmount(double sendAmount);
 }

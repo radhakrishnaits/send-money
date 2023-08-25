@@ -1,8 +1,10 @@
 package com.altimetrik.wu.sendmoney.util;
 
 
+import com.altimetrik.wu.sendmoney.entity.CardEntity;
 import com.altimetrik.wu.sendmoney.entity.Currency;
 import com.altimetrik.wu.sendmoney.entity.SenderAllowedCountry;
+import com.altimetrik.wu.sendmoney.repository.CardRepo;
 import com.altimetrik.wu.sendmoney.repository.CurrencyRepository;
 import com.altimetrik.wu.sendmoney.repository.SenderAllowedCurrencyRepository;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -26,6 +28,9 @@ import java.util.stream.Collectors;
 public class CountryDumpDataHelper {
     @Autowired
     private CurrencyRepository currencyRepository;
+
+    @Autowired
+    private CardRepo cardRepo;
 
     @Autowired
     private SenderAllowedCurrencyRepository senderAllowedCurrencyRepository;
@@ -55,13 +60,13 @@ public class CountryDumpDataHelper {
             List<SenderAllowedCountry> senderAllowedCountries = finalCurrencies.stream().map((currency) ->
                     new SenderAllowedCountry(currency.getCountry(), currency.getCountryCode(), currency.getCurrencyCode(), currency.getCurrency(), currency)
             ).collect(Collectors.toList());
-            System.out.println("sender list" +senderAllowedCountries);
+            System.out.println("sender list" + senderAllowedCountries);
             senderAllowedCountries.forEach(senderAllowedCountry -> {
                 int count = 0;
                 for (SenderAllowedCountry senderAllowedCountry1 : senderAllowedCountries) {
                     count++;
                     senderAllowedCountry.setCurrency(senderAllowedCountry1.getCurrency());
-                    System.out.println("Country name: "+senderAllowedCountry);
+                    System.out.println("Country name: " + senderAllowedCountry);
                     senderAllowedCurrencyRepository.save(senderAllowedCountry);
                     if (count == 5) break;
 
@@ -80,5 +85,15 @@ public class CountryDumpDataHelper {
             }
         });
         System.out.println("data feed done...!!!");
+    }
+
+    @PostConstruct
+    public void cardDataDump() throws IOException {
+        ObjectMapper mapper = new ObjectMapper();
+        ClassLoader classLoader = getClass().getClassLoader();
+        CardEntity[] response = mapper.readValue(new File(Objects.requireNonNull(classLoader.getResource("Card.json")).getFile()), CardEntity[].class);
+        for (CardEntity cardEntity : response) {
+            cardRepo.save(cardEntity);
+        }
     }
 }
