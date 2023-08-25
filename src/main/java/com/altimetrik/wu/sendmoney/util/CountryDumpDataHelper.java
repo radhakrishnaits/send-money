@@ -79,7 +79,7 @@ public class CountryDumpDataHelper {
         System.out.println("data feed done...!!!");
     }
 
-    @PostConstruct
+   // @PostConstruct
     public void cardDataDump() throws IOException {
         ObjectMapper mapper = new ObjectMapper();
         ClassLoader classLoader = getClass().getClassLoader();
@@ -89,7 +89,7 @@ public class CountryDumpDataHelper {
         }
     }
 
-    @PostConstruct
+  //  @PostConstruct
     public void receiverDataDump() throws IOException {
         ObjectMapper mapper = new ObjectMapper();
         ClassLoader classLoader = getClass().getClassLoader();
