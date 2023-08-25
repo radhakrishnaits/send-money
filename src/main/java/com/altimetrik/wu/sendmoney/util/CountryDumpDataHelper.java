@@ -78,7 +78,7 @@ public class CountryDumpDataHelper {
         }
         System.out.println("data feed done...!!!");
     }
-
+/*
     @PostConstruct
     public void cardDataDump() throws IOException {
         ObjectMapper mapper = new ObjectMapper();
@@ -97,5 +97,5 @@ public class CountryDumpDataHelper {
         for (ReceiverEntity receiverEntity : response) {
             receiverRepository.save(receiverEntity);
         }
-    }
+    }*/
 }
