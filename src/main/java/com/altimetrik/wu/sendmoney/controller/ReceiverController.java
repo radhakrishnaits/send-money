@@ -1,5 +1,7 @@
 package com.altimetrik.wu.sendmoney.controller;
 
+import com.altimetrik.wu.sendmoney.dto.ReponseDTO;
+import com.altimetrik.wu.sendmoney.dto.request.RequestDTO;
 import com.altimetrik.wu.sendmoney.service.ReceiverService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
@@ -18,15 +20,10 @@ public class ReceiverController {
         this.receiverService = receiverService;
     }
 
-    @GetMapping("/receive-amount")
-
-    public ResponseEntity<Map<String, Double>> calculateReceiveAmount(@RequestParam double sendAmount){
-        double conversionRate = 0.9;
-        double feeAmount =5.0;
-        double receiveAmount = sendAmount*conversionRate-feeAmount;
-        Map<String, Double> response = new HashMap<>();
-        response.put("sendAmount",sendAmount);
-        response.put("receiveAmount",receiveAmount);
-        return ResponseEntity.ok(response);
+    @GetMapping("/transaction/rates")
+    public ResponseEntity<ReponseDTO> calculateReceiveAmount(@RequestParam RequestDTO requestDTO){
+        ReponseDTO reponseDTO = receiverService.getReceiverAmount(requestDTO);
+        return ResponseEntity.ok(reponseDTO);
     }
+
 }

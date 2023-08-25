@@ -3,9 +3,11 @@ package com.altimetrik.wu.sendmoney.util;
 
 import com.altimetrik.wu.sendmoney.entity.CardEntity;
 import com.altimetrik.wu.sendmoney.entity.Currency;
+import com.altimetrik.wu.sendmoney.entity.ReceiverEntity;
 import com.altimetrik.wu.sendmoney.entity.SenderAllowedCountry;
 import com.altimetrik.wu.sendmoney.repository.CardRepo;
 import com.altimetrik.wu.sendmoney.repository.CurrencyRepository;
+import com.altimetrik.wu.sendmoney.repository.ReceiverRepository;
 import com.altimetrik.wu.sendmoney.repository.SenderAllowedCurrencyRepository;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -31,6 +33,9 @@ public class CountryDumpDataHelper {
 
     @Autowired
     private CardRepo cardRepo;
+
+    @Autowired
+    private ReceiverRepository receiverRepository;
 
     @Autowired
     private SenderAllowedCurrencyRepository senderAllowedCurrencyRepository;
@@ -94,6 +99,16 @@ public class CountryDumpDataHelper {
         CardEntity[] response = mapper.readValue(new File(Objects.requireNonNull(classLoader.getResource("Card.json")).getFile()), CardEntity[].class);
         for (CardEntity cardEntity : response) {
             cardRepo.save(cardEntity);
+        }
+    }
+
+    @PostConstruct
+    public void receiverDataDump() throws IOException {
+        ObjectMapper mapper = new ObjectMapper();
+        ClassLoader classLoader = getClass().getClassLoader();
+        ReceiverEntity[] response = mapper.readValue(new File(Objects.requireNonNull(classLoader.getResource("transferRate.json")).getFile()), ReceiverEntity[].class);
+        for (ReceiverEntity receiverEntity : response) {
+            receiverRepository.save(receiverEntity);
         }
     }
 }

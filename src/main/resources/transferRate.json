@@ -1,0 +1,43 @@
+[
+  {
+    "senderCountryCode": "IN",
+    "receiverCountryCode": "TK",
+    "fromCurrency": "INR",
+    "toCurrency": "NZD",
+    "fxRate": "0.020",
+    "Commission": "0.5"
+  },
+  {
+    "senderCountryCode": "IN",
+    "receiverCountryCode": "MK",
+    "fromCurrency": "INR",
+    "toCurrency": "MKD",
+    "fxRate": "0.69",
+    "Commission": "0.5"
+  },
+  {
+    "senderCountryCode": "IN",
+    "receiverCountryCode": "ZA",
+    "fromCurrency": "INR",
+    "toCurrency": "ZAR",
+    "fxRate": "00.23",
+    "Commission": "0.5"
+  },
+  {
+    "senderCountryCode": "IN",
+    "receiverCountryCode": "MM",
+    "fromCurrency": "INR",
+    "toCurrency": "MMK",
+    "fxRate": "25.41",
+    "Commission": "0.5"
+  },
+  {
+    "senderCountryCode": "IN",
+    "receiverCountryCode": "CF",
+    "fromCurrency": "INR",
+    "toCurrency": "XAF",
+    "fxRate": "7.35",
+    "Commission": "0.5"
+  }
+
+]

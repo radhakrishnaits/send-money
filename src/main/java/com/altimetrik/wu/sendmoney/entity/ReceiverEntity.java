@@ -1,25 +1,29 @@
 package com.altimetrik.wu.sendmoney.entity;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
+
 @Entity
+@Table(name="receiver")
 public class ReceiverEntity {
     @Id
-    @GeneratedValue(strategy= GenerationType.IDENTITY)
-    private Long id;
+    @GeneratedValue(strategy= GenerationType.AUTO)
+    @Column(name="receiver_id")
+    private int receiverId;
+    @Column(name="sender_amount")
     private double senderAmount;
+    @Column(name="receiver_amount")
     private double receiverAmount;
+    @Column(name="fx_rate")
     private double fxrate;
+    @Column(name="commission")
     private double commission;
 
-    public Long getId() {
-        return id;
+    public int getReceiverId() {
+        return receiverId;
     }
 
-    public void setId(Long id) {
-        this.id = id;
+    public void setReceiverId(int receiverId) {
+        this.receiverId = receiverId;
     }
 
     public double getSenderAmount() {
@@ -57,7 +61,7 @@ public class ReceiverEntity {
     @Override
     public String toString() {
         return "ReceiverEntity{" +
-                "id=" + id +
+                "receiverId=" + receiverId +
                 ", senderAmount=" + senderAmount +
                 ", receiverAmount=" + receiverAmount +
                 ", fxrate=" + fxrate +

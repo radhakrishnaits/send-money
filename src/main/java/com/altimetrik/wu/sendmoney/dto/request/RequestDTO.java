@@ -1,24 +1,24 @@
 package com.altimetrik.wu.sendmoney.dto.request;
 
 public class RequestDTO {
-    private double fromCurrency;
-    private double toCurrency;
+    private String fromCurrency;
+    private String toCurrency;
     private double amount;
 
-    public double getSendAmount() {
+    public String getFromCurrency() {
         return fromCurrency;
     }
 
-    public void setSendAmount(double sendAmount) {
-        this.fromCurrency = sendAmount;
+    public void setFromCurrency(String fromCurrency) {
+        this.fromCurrency = fromCurrency;
     }
 
-    public double getReceiveAmount() {
+    public String getToCurrency() {
         return toCurrency;
     }
 
-    public void setReceiveAmount(double receiveAmount) {
-        this.toCurrency = receiveAmount;
+    public void setToCurrency(String toCurrency) {
+        this.toCurrency = toCurrency;
     }
 
     public double getAmount() {
