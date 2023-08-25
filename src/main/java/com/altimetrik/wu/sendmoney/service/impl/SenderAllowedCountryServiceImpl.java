@@ -14,7 +14,7 @@ public class SenderAllowedCountryServiceImpl implements SenderAllowedCountryServ
     private SenderAllowedCurrencyRepository senderAllowedCurrencyRepository;
 
     @Override
-    public List<SenderAllowedCountry> gSenderAllowedCountries(String countryCode) {
+    public List<SenderAllowedCountry> getSenderAllowedCountries(String countryCode) {
         return  senderAllowedCurrencyRepository.getSenderAllowedCountryByCountryCode(countryCode);
     }
 }

@@ -34,7 +34,7 @@ public class SenderAllowedCountryServiceImplTest {
         String countryCode = "IN";
         List<SenderAllowedCountry> givenSenderAllowedCountries = getSenderAllowedCountries();
         when(senderAllowedCurrencyRepository.getSenderAllowedCountryByCountryCode(countryCode)).thenReturn(givenSenderAllowedCountries);
-        List<SenderAllowedCountry> expectedSenderAllowedCountries = senderAllowedCountryService.gSenderAllowedCountries(countryCode);
+        List<SenderAllowedCountry> expectedSenderAllowedCountries = senderAllowedCountryService.getSenderAllowedCountries(countryCode);
         assertNotNull(expectedSenderAllowedCountries);
         assertEquals(expectedSenderAllowedCountries, givenSenderAllowedCountries);
     }

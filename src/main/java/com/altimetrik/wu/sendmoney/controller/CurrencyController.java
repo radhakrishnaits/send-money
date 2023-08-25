@@ -61,6 +61,6 @@ public class CurrencyController {
     })
     @GetMapping("/country/{country_code}")
     public ResponseEntity<List<SenderAllowedCountry>> senderAllowedCountry(@PathVariable(value = "country_code", required = false) String countryCode) {
-        return ResponseEntity.ok(senderAllowedCountryService.gSenderAllowedCountries(countryCode));
+        return ResponseEntity.ok(senderAllowedCountryService.getSenderAllowedCountries(countryCode));
     }
 }

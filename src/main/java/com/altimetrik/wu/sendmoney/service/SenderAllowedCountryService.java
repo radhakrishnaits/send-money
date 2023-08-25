@@ -5,5 +5,5 @@ import com.altimetrik.wu.sendmoney.entity.SenderAllowedCountry;
 import java.util.List;
 
 public interface SenderAllowedCountryService {
-    public List<SenderAllowedCountry> gSenderAllowedCountries(String countryCode);
+    public List<SenderAllowedCountry> getSenderAllowedCountries(String countryCode);
 }

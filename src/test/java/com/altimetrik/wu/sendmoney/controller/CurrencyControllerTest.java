@@ -59,7 +59,7 @@ public class CurrencyControllerTest {
     @Test
     public void getSenderAvailableCurrencyShouldReturnCountryList() throws Exception {
         List<SenderAllowedCountry> senderAllowedCountries = getSenderAllowedCountries();
-        when(senderAllowedCountryService.gSenderAllowedCountries("IN")).thenReturn(senderAllowedCountries);
+        when(senderAllowedCountryService.getSenderAllowedCountries("IN")).thenReturn(senderAllowedCountries);
         this.mockMvc.perform(get("/country/IN").
                 content(senderAllowedCountries.toString()).contentType(MediaType.APPLICATION_JSON)).andExpect(status().isOk());
 
@@ -68,7 +68,7 @@ public class CurrencyControllerTest {
     @Test
     public void getSenderAvailableCurrencyShouldReturnNotFound() throws Exception {
         List<SenderAllowedCountry> senderAllowedCountries = getSenderAllowedCountries();
-        when(senderAllowedCountryService.gSenderAllowedCountries("IN")).thenReturn(senderAllowedCountries);
+        when(senderAllowedCountryService.getSenderAllowedCountries("IN")).thenReturn(senderAllowedCountries);
         this.mockMvc.perform(get("/country/abc/IN").
                 content(senderAllowedCountries.toString()).contentType(MediaType.APPLICATION_JSON)).andExpect(status().isNotFound());
 
