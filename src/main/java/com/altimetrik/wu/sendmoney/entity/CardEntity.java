@@ -1,61 +1,67 @@
 package com.altimetrik.wu.sendmoney.entity;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 import java.util.Date;
 
 @Entity
+@Table(name = "user_cards")
 public class CardEntity {
     @Id
-    private int card_id;
-    private int user_id;
-    private Long card_number;
-    private String card_expiry;
-    private String name_on_card;
+    @Column(name = "card_id")
+    private int cardId;
+    @Column(name = "user_id")
+    private int userId;
+    @Column(name = "card_number")
+    private Long cardNumber;
+    @Column(name = "card_expiry")
+    private String cardExpiry;
+    @Column(name = "name_on_card")
+    private String nameOnCard;
+    @Column(name = "status")
     private String status;
+    @Column(name = "modifiedOn")
     private Date modified_on;
+    @Column(name = "modifiedBy")
     private String modified_by;
 
-    public int getCard_id() {
-        return card_id;
+    public int getCardId() {
+        return cardId;
     }
 
-    public void setCard_id(int card_id) {
-        this.card_id = card_id;
+    public void setCardId(int cardId) {
+        this.cardId = cardId;
     }
 
-    public int getUser_id() {
-        return user_id;
+    public int getUserId() {
+        return userId;
     }
 
-    public void setUser_id(int user_id) {
-        this.user_id = user_id;
+    public void setUserId(int userId) {
+        this.userId = userId;
     }
 
-    public Long getCard_number() {
-        return card_number;
+    public Long getCardNumber() {
+        return cardNumber;
     }
 
-    public void setCard_number(Long card_number) {
-        this.card_number = card_number;
+    public void setCardNumber(Long cardNumber) {
+        this.cardNumber = cardNumber;
     }
 
-    public String getCard_expiry() {
-        return card_expiry;
+    public String getCardExpiry() {
+        return cardExpiry;
     }
 
-    public void setCard_expiry(String card_expiry) {
-        this.card_expiry = card_expiry;
+    public void setCardExpiry(String cardExpiry) {
+        this.cardExpiry = cardExpiry;
     }
 
-    public String getName_on_card() {
-        return name_on_card;
+    public String getNameOnCard() {
+        return nameOnCard;
     }
 
-    public void setName_on_card(String name_on_card) {
-        this.name_on_card = name_on_card;
+    public void setNameOnCard(String nameOnCard) {
+        this.nameOnCard = nameOnCard;
     }
 
     public String getStatus() {
@@ -80,5 +86,19 @@ public class CardEntity {
 
     public void setModified_by(String modified_by) {
         this.modified_by = modified_by;
+    }
+
+    @Override
+    public String toString() {
+        return "CardEntity{" +
+                "cardId=" + cardId +
+                ", userId=" + userId +
+                ", cardNumber=" + cardNumber +
+                ", cardExpiry='" + cardExpiry + '\'' +
+                ", name_on_card='" + nameOnCard + '\'' +
+                ", status='" + status + '\'' +
+                ", modified_on=" + modified_on +
+                ", modified_by='" + modified_by + '\'' +
+                '}';
     }
 }

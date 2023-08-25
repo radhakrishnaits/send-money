@@ -19,7 +19,6 @@ public class ReceiverController {
     }
 
     @GetMapping("/receive-amount")
-    //service layer logiv implementation -reponse
 
     public ResponseEntity<Map<String, Double>> calculateReceiveAmount(@RequestParam double sendAmount){
         double conversionRate = 0.9;

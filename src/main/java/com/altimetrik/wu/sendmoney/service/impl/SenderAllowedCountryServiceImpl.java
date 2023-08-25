@@ -18,7 +18,7 @@ public class SenderAllowedCountryServiceImpl implements SenderAllowedCountryServ
     public List<SenderAllowedCountry> getSenderAllowedCountries(String countryCode) throws NotFoundException {
           List<SenderAllowedCountry> senderAllowedCountry=senderAllowedCurrencyRepository.getSenderAllowedCountryByCountryCode(countryCode);
           if(senderAllowedCountry.isEmpty()){
-              throw new NotFoundException("Invalid countryId");
+              throw new NotFoundException("'Invalid country code");
           }
           return senderAllowedCountry;
     }

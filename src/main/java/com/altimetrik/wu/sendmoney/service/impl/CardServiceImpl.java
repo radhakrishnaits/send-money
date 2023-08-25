@@ -1,5 +1,6 @@
 package com.altimetrik.wu.sendmoney.service.impl;
 
+import com.altimetrik.wu.sendmoney.dto.request.RequestDTO;
 import com.altimetrik.wu.sendmoney.entity.CardEntity;
 import com.altimetrik.wu.sendmoney.repository.CardRepo;
 import com.altimetrik.wu.sendmoney.service.CardService;
@@ -17,6 +18,11 @@ public class CardServiceImpl implements CardService {
 
     public CardEntity saveCard(CardEntity cardEntity) {
         return cardRepo.save(cardEntity);
+    }
+
+    @Override
+    public CardEntity saveCard(RequestDTO cardEntity) {
+        return null;
     }
 }
 
