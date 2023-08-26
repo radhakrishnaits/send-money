@@ -12,10 +12,6 @@ public class SQLiteConfig {
         final DriverManagerDataSource dataSource = new DriverManagerDataSource();
         dataSource.setDriverClassName("org.sqlite.JDBC");
         dataSource.setUrl("jdbc:sqlite:D:\\User\\aingle\\send-money\\send-money.db");
-        //dataSource.setUsername("sa");
-        //dataSource.setPassword("sa");
-
-
         return dataSource;
     }
 }

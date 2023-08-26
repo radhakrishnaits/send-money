@@ -2,6 +2,7 @@ package com.altimetrik.wu.sendmoney.service;
 
 import com.altimetrik.wu.sendmoney.dto.request.CurrencyRequest;
 import com.altimetrik.wu.sendmoney.entity.Currency;
+import javassist.NotFoundException;
 
 import java.util.List;
 
@@ -12,7 +13,7 @@ public interface CurrencyService {
 
     void deleteCurrency(List<String> countryNames);
 
-    List<Currency> getCurrency();
+    List<Currency> getCurrency() throws NotFoundException;
 
     Currency getCurrencyByCountryName(String country);
 }

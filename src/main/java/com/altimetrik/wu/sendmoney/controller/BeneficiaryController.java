@@ -13,6 +13,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
+@CrossOrigin(origins = "*", allowedHeaders = "*")
 @RequestMapping("/beneficiary")
 public class BeneficiaryController {
 
@@ -41,7 +42,7 @@ public class BeneficiaryController {
             @ApiResponse(code = 404, message = "The resource you were trying to reach is not found")
     })
     @GetMapping(value = "/list/{senderID}")
-    ResponseEntity<List<Beneficiary>> BeneficiaryList(@PathVariable Long senderID) {
+    ResponseEntity<List<Beneficiary>> getBeneficiaryList(@PathVariable Long senderID) {
         return ResponseEntity.ok().body(beneficiaryService.getBeneficiaries(senderID));
     }
 }
