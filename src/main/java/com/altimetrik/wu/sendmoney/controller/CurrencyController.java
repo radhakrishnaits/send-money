@@ -53,7 +53,7 @@ public class CurrencyController {
     })
     @GetMapping("/country")
     ResponseEntity<AppResponse<List<Currency>>> getCurrency() {
-        return ResponseEntity.ok().body(new AppResponse<>(currencyService.getCurrency(), AppConstants.SUCCESS,HttpStatus.OK));
+        return ResponseEntity.ok().body(new AppResponse<>(currencyService.getCurrency(), AppConstants.SUCCESS, HttpStatus.OK));
     }
 
     @ApiOperation(value = "Get all available currencies", response = ResponseEntity.class)
@@ -64,12 +64,12 @@ public class CurrencyController {
             @ApiResponse(code = 404, message = "The resource you were trying to reach is not found")
     })
     @GetMapping("/country/{country_code}")
-    public ResponseEntity<AppResponse< List<SenderAllowedCountry>>> senderAllowedCountry(@PathVariable(value = "country_code", required = false) String countryCode) throws NotFoundException {
+    public ResponseEntity<AppResponse<List<SenderAllowedCountry>>> senderAllowedCountry(@PathVariable(value = "country_code", required = false) String countryCode)  {
         List<SenderAllowedCountry> response = null;
-        AppResponse<List<SenderAllowedCountry>> appResponse= null;
+        AppResponse<List<SenderAllowedCountry>> appResponse = null;
         try {
             response = senderAllowedCountryService.getSenderAllowedCountries(countryCode);
-            appResponse= new AppResponse<>(response, AppConstants.SUCCESS, HttpStatus.OK);
+            appResponse = new AppResponse<>(response, AppConstants.SUCCESS, HttpStatus.OK);
         } catch (NotFoundException e) {
             return ResponseEntity.badRequest().body(new AppResponse<>(null, e.getMessage(), HttpStatus.BAD_REQUEST));
         }
