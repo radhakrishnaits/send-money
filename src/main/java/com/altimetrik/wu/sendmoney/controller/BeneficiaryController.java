@@ -4,7 +4,6 @@ import com.altimetrik.wu.sendmoney.constats.AppConstants;
 import com.altimetrik.wu.sendmoney.dto.request.BeneficiaryDTO;
 import com.altimetrik.wu.sendmoney.dto.response.AppResponse;
 import com.altimetrik.wu.sendmoney.entity.Beneficiary;
-import com.altimetrik.wu.sendmoney.entity.SenderAllowedCountry;
 import com.altimetrik.wu.sendmoney.service.BeneficiaryService;
 import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiResponse;
