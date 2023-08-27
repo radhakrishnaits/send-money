@@ -4,6 +4,7 @@ import com.altimetrik.wu.sendmoney.dto.request.BeneficiaryDTO;
 import com.altimetrik.wu.sendmoney.entity.Beneficiary;
 import com.altimetrik.wu.sendmoney.repository.BeneficiaryRepository;
 import com.altimetrik.wu.sendmoney.service.BeneficiaryService;
+import javassist.NotFoundException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -30,8 +31,13 @@ public class BeneficiaryServiceImpl implements BeneficiaryService {
 
 
     @Override
-    public List<Beneficiary> getBeneficiaries(Long senderID) {
-        return beneficiaryRepository.findBeneficiaryBySenderID(senderID);
+    public List<Beneficiary> getBeneficiaries(Long senderID) throws NotFoundException {
+        List<Beneficiary> beneficiaryList = beneficiaryRepository.findBeneficiaryBySenderID(senderID);
+        if (beneficiaryList.isEmpty()) {
+            throw new NotFoundException("User Not Found");
+        } else {
+            return beneficiaryList;
+        }
     }
 
 
