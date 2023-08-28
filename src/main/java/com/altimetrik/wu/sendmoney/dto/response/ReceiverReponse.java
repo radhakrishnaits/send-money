@@ -1,6 +1,6 @@
-package com.altimetrik.wu.sendmoney.dto;
+package com.altimetrik.wu.sendmoney.dto.response;
 
-public class ReponseDTO {
+public class ReceiverReponse {
     private double senderAmount;
     private double receiverAmount;
     private double fxrate;

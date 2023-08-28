@@ -1,27 +1,17 @@
-package com.altimetrik.wu.sendmoney.entity;
+package com.altimetrik.wu.sendmoney.dto.request;
 
-import javax.persistence.*;
+import javax.persistence.Column;
+import javax.persistence.Id;
 import java.util.Date;
 
-@Entity
-@Table(name = "user_cards")
-public class CardEntity {
-    @Id
-    @Column(name = "card_id")
+public class CardRequest {
     private int cardId;
-    @Column(name = "user_id")
     private int userId;
-    @Column(name = "card_number")
     private Long cardNumber;
-    @Column(name = "card_expiry")
     private String cardExpiry;
-    @Column(name = "name_on_card")
     private String nameOnCard;
-    @Column(name = "status")
     private String status;
-    @Column(name = "modifiedOn")
     private Date modified_on;
-    @Column(name = "modifiedBy")
     private String modified_by;
 
     public int getCardId() {
@@ -86,19 +76,5 @@ public class CardEntity {
 
     public void setModified_by(String modified_by) {
         this.modified_by = modified_by;
-    }
-
-    @Override
-    public String toString() {
-        return "CardEntity{" +
-                "cardId=" + cardId +
-                ", userId=" + userId +
-                ", cardNumber=" + cardNumber +
-                ", cardExpiry='" + cardExpiry + '\'' +
-                ", name_on_card='" + nameOnCard + '\'' +
-                ", status='" + status + '\'' +
-                ", modified_on=" + modified_on +
-                ", modified_by='" + modified_by + '\'' +
-                '}';
     }
 }

@@ -1,6 +1,6 @@
 package com.altimetrik.wu.sendmoney.dto.request;
 
-public class RequestDTO {
+public class ReceiverRequest {
     private String fromCurrency;
     private String toCurrency;
     private double amount;

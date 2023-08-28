@@ -20,7 +20,7 @@ public class TransferRate {
     @Column(name = "fx_rate")
     private String fxRate;
     @Column(name = "commission")
-    private String  Commission;
+    private String  commission;
 
     public String getTransferId() {
         return transferId;
@@ -71,11 +71,11 @@ public class TransferRate {
     }
 
     public String getCommission() {
-        return Commission;
+        return commission;
     }
 
     public void setCommission(String commission) {
-        Commission = commission;
+        commission = commission;
     }
 
     @Override
@@ -87,7 +87,7 @@ public class TransferRate {
                 ", fromCurrency='" + fromCurrency + '\'' +
                 ", toCurrency='" + toCurrency + '\'' +
                 ", fxRate='" + fxRate + '\'' +
-                ", Commission='" + Commission + '\'' +
+                ", commission='" + commission + '\'' +
                 '}';
     }
 }
