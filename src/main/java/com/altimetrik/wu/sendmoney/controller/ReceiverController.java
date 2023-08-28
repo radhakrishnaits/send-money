@@ -13,6 +13,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.io.IOException;
 import java.util.List;
 
 @RestController
@@ -29,7 +30,13 @@ public class ReceiverController {
             @ApiResponse(code = 404, message = "The resource you were trying to reach is not found")
     })
     @GetMapping(value = "/transaction/rates")
-    ResponseEntity<ReceiverReponse> calculateReceiveAmount(@RequestParam ReceiverRequest receiverRequest) {
+    ResponseEntity<ReceiverReponse> calculateReceiveAmount(@RequestParam String fromCurrency,
+                                                           @RequestParam String toCurrency,
+                                                           @RequestParam double amount) throws IOException {
+        ReceiverRequest receiverRequest =new ReceiverRequest();
+        receiverRequest.setFromCurrency(fromCurrency);
+        receiverRequest.setToCurrency(toCurrency);
+        receiverRequest.setAmount(amount);
         ReceiverReponse receiverReponse = receiverService.getReceiverAmount(receiverRequest);
         return ResponseEntity.ok().body(receiverReponse);
     }
