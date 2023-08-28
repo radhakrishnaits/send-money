@@ -56,30 +56,33 @@ public class CountryDumpDataHelper {
                 currencyRepository.save(currency);
             });
         }
-        currencies = currencyRepository.findAll();
-        List<Currency> finalCurrencies = currencies;
-        List<SenderAllowedCountry> senderAllowedCountries = finalCurrencies.stream().map((currency) -> {
-                    Set<Currency> currency1 = new HashSet<>();
-                    currency1.add(currency);
-                    return new SenderAllowedCountry(currency.getCountry(), currency.getCountryCode(),
-                            currency.getCurrencyCode(), currency.getCurrency(), currency1);
+        List<SenderAllowedCountry> senderAllowedCountriesRes = senderAllowedCurrencyRepository.findAll();
+        if (senderAllowedCountriesRes.isEmpty()) {
+            currencies = currencyRepository.findAll();
+            List<Currency> finalCurrencies = currencies;
+            List<SenderAllowedCountry> senderAllowedCountries = finalCurrencies.stream().map((currency) -> {
+                        Set<Currency> currency1 = new HashSet<>();
+                        currency1.add(currency);
+                        return new SenderAllowedCountry(currency.getCountry(), currency.getCountryCode(),
+                                currency.getCurrencyCode(), currency.getCurrency(), currency1);
+                    }
+            ).collect(Collectors.toList());
+            System.out.println("sender list" + senderAllowedCountries);
+            for (int i = 0; i < senderAllowedCountries.size() - 1; i++) {
+                SenderAllowedCountry senderAllowedCountry = senderAllowedCountries.get(i);
+                Set<Currency> currency = new HashSet<>();
+                for (SenderAllowedCountry senderAllowedCountry1 : senderAllowedCountries) {
+                    currency.addAll(senderAllowedCountry1.getAllowedCountry());
+                    System.out.println("Country name: " + senderAllowedCountry);
                 }
-        ).collect(Collectors.toList());
-        System.out.println("sender list" + senderAllowedCountries);
-        for (int i = 0; i < senderAllowedCountries.size() - 1; i++) {
-            SenderAllowedCountry senderAllowedCountry = senderAllowedCountries.get(i);
-            Set<Currency> currency = new HashSet<>();
-            for (SenderAllowedCountry senderAllowedCountry1 : senderAllowedCountries) {
-                currency.addAll(senderAllowedCountry1.getAllowedCountry());
-                System.out.println("Country name: " + senderAllowedCountry);
+                senderAllowedCountry.setAllowedCountry(currency);
+                senderAllowedCurrencyRepository.save(senderAllowedCountry);
             }
-            senderAllowedCountry.setAllowedCountry(currency);
-            senderAllowedCurrencyRepository.save(senderAllowedCountry);
         }
         System.out.println("data feed done...!!!");
     }
 
-    @PostConstruct
+    // @PostConstruct
     public void cardDataDump() throws IOException {
         ObjectMapper mapper = new ObjectMapper();
         ClassLoader classLoader = getClass().getClassLoader();
@@ -89,7 +92,7 @@ public class CountryDumpDataHelper {
         }
     }
 
-    @PostConstruct
+    //  @PostConstruct
     public void receiverDataDump() throws IOException {
         ObjectMapper mapper = new ObjectMapper();
         ClassLoader classLoader = getClass().getClassLoader();

@@ -14,15 +14,12 @@ import javassist.NotFoundException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
 @RestController
+@CrossOrigin(origins = "*", allowedHeaders = "*")
 public class CurrencyController {
     @Autowired
     private CurrencyService currencyService;
@@ -53,7 +50,13 @@ public class CurrencyController {
     })
     @GetMapping("/country")
     ResponseEntity<AppResponse<List<Currency>>> getCurrency() {
-        return ResponseEntity.ok().body(new AppResponse<>(currencyService.getCurrency(), AppConstants.SUCCESS,HttpStatus.OK));
+        AppResponse<List<Currency>> appResponse = null;
+        try {
+            return ResponseEntity.ok().body(new AppResponse<>(currencyService.getCurrency(), AppConstants.SUCCESS, HttpStatus.OK));
+        }catch (NotFoundException e){
+            return ResponseEntity.ok().body(new AppResponse<>(null, e.getMessage(), HttpStatus.NOT_FOUND));
+        }
+
     }
 
     @ApiOperation(value = "Get all available currencies", response = ResponseEntity.class)
@@ -64,12 +67,12 @@ public class CurrencyController {
             @ApiResponse(code = 404, message = "The resource you were trying to reach is not found")
     })
     @GetMapping("/country/{country_code}")
-    public ResponseEntity<AppResponse< List<SenderAllowedCountry>>> senderAllowedCountry(@PathVariable(value = "country_code", required = false) String countryCode) throws NotFoundException {
+    public ResponseEntity<AppResponse<List<SenderAllowedCountry>>> senderAllowedCountry(@PathVariable(value = "country_code", required = false) String countryCode)  {
         List<SenderAllowedCountry> response = null;
-        AppResponse<List<SenderAllowedCountry>> appResponse= null;
+        AppResponse<List<SenderAllowedCountry>> appResponse = null;
         try {
             response = senderAllowedCountryService.getSenderAllowedCountries(countryCode);
-            appResponse= new AppResponse<>(response, AppConstants.SUCCESS, HttpStatus.OK);
+            appResponse = new AppResponse<>(response, AppConstants.SUCCESS, HttpStatus.OK);
         } catch (NotFoundException e) {
             return ResponseEntity.badRequest().body(new AppResponse<>(null, e.getMessage(), HttpStatus.BAD_REQUEST));
         }

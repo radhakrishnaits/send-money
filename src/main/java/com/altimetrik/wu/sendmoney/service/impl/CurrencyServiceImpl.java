@@ -4,6 +4,7 @@ import com.altimetrik.wu.sendmoney.dto.request.CurrencyRequest;
 import com.altimetrik.wu.sendmoney.entity.Currency;
 import com.altimetrik.wu.sendmoney.repository.CurrencyRepository;
 import com.altimetrik.wu.sendmoney.service.CurrencyService;
+import javassist.NotFoundException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -42,8 +43,12 @@ public class CurrencyServiceImpl implements CurrencyService {
     }
 
     @Override
-    public List<Currency> getCurrency() {
-        return (List<Currency>) currencyRepository.findAll();
+    public List<Currency> getCurrency() throws NotFoundException {
+        List<Currency> currencies= currencyRepository.findAll();
+        if(currencies.isEmpty()){
+            throw new NotFoundException("Not found");
+        }
+        return currencies;
     }
 
     @Override

@@ -3,6 +3,7 @@ package com.altimetrik.wu.sendmoney.service;
 import com.altimetrik.wu.sendmoney.entity.Currency;
 import com.altimetrik.wu.sendmoney.repository.CurrencyRepository;
 import com.altimetrik.wu.sendmoney.service.impl.CurrencyServiceImpl;
+import javassist.NotFoundException;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.InjectMocks;
@@ -24,7 +25,7 @@ public class CurrencyServiceTest {
     private CurrencyServiceImpl currencyService;
 
     @Test
-    public void testCurrencies() {
+    public void testCurrencies() throws NotFoundException {
         List<Currency> currencies = new ArrayList<>();
         Currency currency = new Currency();
         currency.setCurrency("Indian Rupee");
@@ -45,7 +46,7 @@ public class CurrencyServiceTest {
     }
 
     @Test
-    public void testEmptyCurrencies() {
+    public void testEmptyCurrencies() throws NotFoundException {
         List<Currency> currencies = new ArrayList<>();
         when(currencyRepository.findAll()).thenReturn(currencies);
         List<Currency> receivedCurrencies = currencyService.getCurrency();
