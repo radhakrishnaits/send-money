@@ -1,11 +1,11 @@
 package com.altimetrik.wu.sendmoney.util;
 
 
-import com.altimetrik.wu.sendmoney.entity.CardEntity;
+import com.altimetrik.wu.sendmoney.entity.Card;
 import com.altimetrik.wu.sendmoney.entity.Currency;
-import com.altimetrik.wu.sendmoney.entity.ReceiverEntity;
+import com.altimetrik.wu.sendmoney.entity.Receiver;
 import com.altimetrik.wu.sendmoney.entity.SenderAllowedCountry;
-import com.altimetrik.wu.sendmoney.repository.CardRepo;
+import com.altimetrik.wu.sendmoney.repository.CardRepository;
 import com.altimetrik.wu.sendmoney.repository.CurrencyRepository;
 import com.altimetrik.wu.sendmoney.repository.ReceiverRepository;
 import com.altimetrik.wu.sendmoney.repository.SenderAllowedCurrencyRepository;
@@ -29,7 +29,7 @@ public class CountryDumpDataHelper {
     private CurrencyRepository currencyRepository;
 
     @Autowired
-    private CardRepo cardRepo;
+    private CardRepository cardRepository;
 
     @Autowired
     private ReceiverRepository receiverRepository;
@@ -86,9 +86,9 @@ public class CountryDumpDataHelper {
     public void cardDataDump() throws IOException {
         ObjectMapper mapper = new ObjectMapper();
         ClassLoader classLoader = getClass().getClassLoader();
-        CardEntity[] response = mapper.readValue(new File(Objects.requireNonNull(classLoader.getResource("Card.json")).getFile()), CardEntity[].class);
-        for (CardEntity cardEntity : response) {
-            cardRepo.save(cardEntity);
+        Card[] response = mapper.readValue(new File(Objects.requireNonNull(classLoader.getResource("Card.json")).getFile()), Card[].class);
+        for (Card card : response) {
+            cardRepository.save(card);
         }
     }
 
@@ -96,9 +96,9 @@ public class CountryDumpDataHelper {
     public void receiverDataDump() throws IOException {
         ObjectMapper mapper = new ObjectMapper();
         ClassLoader classLoader = getClass().getClassLoader();
-        ReceiverEntity[] response = mapper.readValue(new File(Objects.requireNonNull(classLoader.getResource("transferRate.json")).getFile()), ReceiverEntity[].class);
-        for (ReceiverEntity receiverEntity : response) {
-            receiverRepository.save(receiverEntity);
+        Receiver[] response = mapper.readValue(new File(Objects.requireNonNull(classLoader.getResource("transferRate.json")).getFile()), Receiver[].class);
+        for (Receiver receiver : response) {
+            receiverRepository.save(receiver);
         }
     }
 }

@@ -1,9 +1,9 @@
 package com.altimetrik.wu.sendmoney.service;
-import com.altimetrik.wu.sendmoney.dto.ReponseDTO;
-import com.altimetrik.wu.sendmoney.dto.request.RequestDTO;
+import com.altimetrik.wu.sendmoney.dto.response.ReceiverReponse;
+import com.altimetrik.wu.sendmoney.dto.request.ReceiverRequest;
 import com.altimetrik.wu.sendmoney.entity.TransferRate;
 
 public interface ReceiverService {
-    ReponseDTO getReceiverAmount(RequestDTO requestDTO);
+    ReceiverReponse getReceiverAmount(ReceiverRequest receiverRequest);
     TransferRate getRates(String fromCurrency, String toCurrency);
 }

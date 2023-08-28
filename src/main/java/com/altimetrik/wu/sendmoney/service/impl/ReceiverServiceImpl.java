@@ -1,8 +1,8 @@
 package com.altimetrik.wu.sendmoney.service.impl;
 
-import com.altimetrik.wu.sendmoney.dto.ReponseDTO;
-import com.altimetrik.wu.sendmoney.dto.request.RequestDTO;
-import com.altimetrik.wu.sendmoney.entity.ReceiverEntity;
+import com.altimetrik.wu.sendmoney.dto.response.ReceiverReponse;
+import com.altimetrik.wu.sendmoney.dto.request.ReceiverRequest;
+import com.altimetrik.wu.sendmoney.entity.Receiver;
 import com.altimetrik.wu.sendmoney.entity.TransferRate;
 import com.altimetrik.wu.sendmoney.repository.TransferRateRepository;
 import com.altimetrik.wu.sendmoney.service.ReceiverService;
@@ -15,16 +15,16 @@ public class ReceiverServiceImpl implements ReceiverService {
     public TransferRateRepository transferRateRepository;
 
     @Override
-    public ReponseDTO getReceiverAmount(RequestDTO requestDTO) {
-        TransferRate transferRate = transferRateRepository.getRatebyCurency(requestDTO.getFromCurrency(), requestDTO.getToCurrency());
+    public ReceiverReponse getReceiverAmount(ReceiverRequest receiverRequest) {
+        TransferRate transferRate = transferRateRepository.getRatebyCurency(receiverRequest.getFromCurrency(), receiverRequest.getToCurrency());
 
-        ReceiverEntity receiverEntity =new ReceiverEntity();
-        double receivedAmount= requestDTO.getAmount()*receiverEntity.getFxrate()+ receiverEntity.getCommission();
-        ReponseDTO reponseDTO = new ReponseDTO();
-        reponseDTO.setReceiverAmount(receivedAmount);
-        reponseDTO.setCommission(receiverEntity.getCommission());
-        reponseDTO.setFxrate(receiverEntity.getFxrate());
-        return reponseDTO;
+        Receiver receiver =new Receiver();
+        double receivedAmount= receiverRequest.getAmount()* receiver.getFxRate()+ receiver.getCommission();
+        ReceiverReponse receiverReponse = new ReceiverReponse();
+        receiverReponse.setReceiverAmount(receivedAmount);
+        receiverReponse.setCommission(receiver.getCommission());
+        receiverReponse.setFxrate(receiver.getFxRate());
+        return receiverReponse;
     }
 
     @Override
