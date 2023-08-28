@@ -39,6 +39,7 @@ public class TransactionServiceImpl implements TransactionService {
         txn.setTransactionAmount(transactionRequest.getTransactionAmount());
         txn.setTransactionStatus("Initiated");
         txn.setCreatedBy(transactionRequest.getCreatedBy());
+        txn.setMtcn(transactionRequest.getMtcn());
 
         txn = transactionRepository.save(txn);
         return txn.getMtcn();
