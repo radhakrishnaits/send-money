@@ -4,40 +4,1999 @@
     "receiverCountryCode": "TK",
     "fromCurrency": "INR",
     "toCurrency": "NZD",
-    "fxRate": "0.020",
-    "commission": "0.5"
+    "fxRate": 0.02,
+    "commission": 0.5
   },
   {
     "senderCountryCode": "IN",
     "receiverCountryCode": "MK",
     "fromCurrency": "INR",
     "toCurrency": "MKD",
-    "fxRate": "0.69",
-    "commission": "0.5"
+    "fxRate": 0.69,
+    "commission": 0.5
   },
   {
     "senderCountryCode": "IN",
     "receiverCountryCode": "ZA",
     "fromCurrency": "INR",
     "toCurrency": "ZAR",
-    "fxRate": "00.23",
-    "commission": "0.5"
+    "fxRate": 0.22,
+    "commission": 0.5
   },
   {
     "senderCountryCode": "IN",
     "receiverCountryCode": "MM",
     "fromCurrency": "INR",
     "toCurrency": "MMK",
-    "fxRate": "25.41",
-    "commission": "0.5"
+    "fxRate": 25.37,
+    "commission": 0.5
   },
   {
     "senderCountryCode": "IN",
     "receiverCountryCode": "CF",
     "fromCurrency": "INR",
     "toCurrency": "XAF",
-    "fxRate": "7.35",
-    "commission": "0.5"
+    "fxRate": 7.33,
+    "commission": 0.5
+  },
+  {
+    "senderCountryCode": "IN",
+    "receiverCountryCode": "SO",
+    "fromCurrency": "INR",
+    "toCurrency": "SOS",
+    "fxRate": 6.87,
+    "commission": 0.5
+  },
+  {
+    "senderCountryCode": "IN",
+    "receiverCountryCode": "BF",
+    "fromCurrency": "INR",
+    "toCurrency": "XOF",
+    "fxRate": 7.33,
+    "commission": 0.5
+  },
+  {
+    "senderCountryCode": "IN",
+    "receiverCountryCode": "PA",
+    "fromCurrency": "INR",
+    "toCurrency": "PAB",
+    "fxRate": 0.012,
+    "commission": 0.5
+  },
+  {
+    "senderCountryCode": "IN",
+    "receiverCountryCode": "IM",
+    "fromCurrency": "INR",
+    "toCurrency": "GBP",
+    "fxRate": 0.0096,
+    "commission": 0.5
+  },
+  {
+    "senderCountryCode": "IN",
+    "receiverCountryCode": "ID",
+    "fromCurrency": "INR",
+    "toCurrency": "IDR",
+    "fxRate": 184.47,
+    "commission": 0.5
+  },
+  {
+    "senderCountryCode": "IN",
+    "receiverCountryCode": "NL",
+    "fromCurrency": "INR",
+    "toCurrency": "EUR",
+    "fxRate": 0.011,
+    "commission": 0.5
+  },
+  {
+    "senderCountryCode": "IN",
+    "receiverCountryCode": "GI",
+    "fromCurrency": "INR",
+    "toCurrency": "GIP",
+    "fxRate": 0.009,
+    "commission": 0.5
+  },
+  {
+    "senderCountryCode": "IN",
+    "receiverCountryCode": "FR",
+    "fromCurrency": "INR",
+    "toCurrency": "EUR",
+    "fxRate": 0.011,
+    "commission": 0.5
+  },
+  {
+    "senderCountryCode": "IN",
+    "receiverCountryCode": "AR",
+    "fromCurrency": "INR",
+    "toCurrency": "ARS",
+    "fxRate": 4.23,
+    "commission": 0.5
+  },
+  {
+    "senderCountryCode": "IN",
+    "receiverCountryCode": "DO",
+    "fromCurrency": "INR",
+    "toCurrency": "DOP",
+    "fxRate": 0.69,
+    "commission": 0.5
+  },
+  {
+    "senderCountryCode": "IN",
+    "receiverCountryCode": "BD",
+    "fromCurrency": "INR",
+    "toCurrency": "BDT",
+    "fxRate": 1.32,
+    "commission": 0.5
+  },
+  {
+    "senderCountryCode": "IN",
+    "receiverCountryCode": "SB",
+    "fromCurrency": "INR",
+    "toCurrency": "SBD",
+    "fxRate": 0.1,
+    "commission": 0.5
+  },
+  {
+    "senderCountryCode": "IN",
+    "receiverCountryCode": "TR",
+    "fromCurrency": "INR",
+    "toCurrency": "TRY",
+    "fxRate": 0.32,
+    "commission": 0.5
+  },
+  {
+    "senderCountryCode": "IN",
+    "receiverCountryCode": "CR",
+    "fromCurrency": "INR",
+    "toCurrency": "CRC",
+    "fxRate": 6.52,
+    "commission": 0.5
+  },
+  {
+    "senderCountryCode": "IN",
+    "receiverCountryCode": "VA",
+    "fromCurrency": "INR",
+    "toCurrency": "EUR",
+    "fxRate": 0.011,
+    "commission": 0.5
+  },
+  {
+    "senderCountryCode": "IN",
+    "receiverCountryCode": "RU",
+    "fromCurrency": "INR",
+    "toCurrency": "RUB",
+    "fxRate": 1.16,
+    "commission": 0.5
+  },
+  {
+    "senderCountryCode": "IN",
+    "receiverCountryCode": "FO",
+    "fromCurrency": "INR",
+    "toCurrency": "DKK",
+    "fxRate": 0.083,
+    "commission": 0.5
+  },
+  {
+    "senderCountryCode": "IN",
+    "receiverCountryCode": "GN",
+    "fromCurrency": "INR",
+    "toCurrency": "GNF",
+    "fxRate": 103.78,
+    "commission": 0.5
+  },
+  {
+    "senderCountryCode": "IN",
+    "receiverCountryCode": "TJ",
+    "fromCurrency": "INR",
+    "toCurrency": "TJS",
+    "fxRate": 0.13,
+    "commission": 0.5
+  },
+  {
+    "senderCountryCode": "IN",
+    "receiverCountryCode": "SI",
+    "fromCurrency": "INR",
+    "toCurrency": "EUR",
+    "fxRate": 0.011,
+    "commission": 0.5
+  },
+  {
+    "senderCountryCode": "IN",
+    "receiverCountryCode": "KG",
+    "fromCurrency": "INR",
+    "toCurrency": "KGS",
+    "fxRate": 1.07,
+    "commission": 0.5
+  },
+  {
+    "senderCountryCode": "IN",
+    "receiverCountryCode": "GG",
+    "fromCurrency": "INR",
+    "toCurrency": "GGP",
+    "fxRate": 0.0096,
+    "commission": 0.5
+  },
+  {
+    "senderCountryCode": "IN",
+    "receiverCountryCode": "BA",
+    "fromCurrency": "INR",
+    "toCurrency": "BAM",
+    "fxRate": 0.022,
+    "commission": 0.5
+  },
+  {
+    "senderCountryCode": "IN",
+    "receiverCountryCode": "PM",
+    "fromCurrency": "INR",
+    "toCurrency": "EUR",
+    "fxRate": 0.011,
+    "commission": 0.5
+  },
+  {
+    "senderCountryCode": "IN",
+    "receiverCountryCode": "MP",
+    "fromCurrency": "INR",
+    "toCurrency": "USD",
+    "fxRate": 0.012,
+    "commission": 0.5
+  },
+  {
+    "senderCountryCode": "IN",
+    "receiverCountryCode": "TW",
+    "fromCurrency": "INR",
+    "toCurrency": "TWD",
+    "fxRate": 0.39,
+    "commission": 0.5
+  },
+  {
+    "senderCountryCode": "IN",
+    "receiverCountryCode": "MF",
+    "fromCurrency": "INR",
+    "toCurrency": "ANG",
+    "fxRate": 0.022,
+    "commission": 0.5
+  },
+  {
+    "senderCountryCode": "IN",
+    "receiverCountryCode": "EC",
+    "fromCurrency": "INR",
+    "toCurrency": "ECS",
+    "fxRate": 318.72,
+    "commission": 0.5
+  },
+  {
+    "senderCountryCode": "IN",
+    "receiverCountryCode": "DZ",
+    "fromCurrency": "INR",
+    "toCurrency": "DZD",
+    "fxRate": 1.65,
+    "commission": 0.5
+  },
+  {
+    "senderCountryCode": "IN",
+    "receiverCountryCode": "BN",
+    "fromCurrency": "INR",
+    "toCurrency": "BND",
+    "fxRate": 0.016,
+    "commission": 0.5
+  },
+  {
+    "senderCountryCode": "IN",
+    "receiverCountryCode": "GR",
+    "fromCurrency": "INR",
+    "toCurrency": "EUR",
+    "fxRate": 0.011,
+    "commission": 0.5
+  },
+  {
+    "senderCountryCode": "IN",
+    "receiverCountryCode": "SK",
+    "fromCurrency": "INR",
+    "toCurrency": "SKK",
+    "fxRate": 0.33,
+    "commission": 0.5
+  },
+  {
+    "senderCountryCode": "IN",
+    "receiverCountryCode": "HN",
+    "fromCurrency": "INR",
+    "toCurrency": "HNL",
+    "fxRate": 0.3,
+    "commission": 0.5
+  },
+  {
+    "senderCountryCode": "IN",
+    "receiverCountryCode": "IE",
+    "fromCurrency": "INR",
+    "toCurrency": "EUR",
+    "fxRate": 0.011,
+    "commission": 0.5
+  },
+  {
+    "senderCountryCode": "IN",
+    "receiverCountryCode": "BL",
+    "fromCurrency": "INR",
+    "toCurrency": "EUR",
+    "fxRate": 0.011,
+    "commission": 0.5
+  },
+  {
+    "senderCountryCode": "IN",
+    "receiverCountryCode": "KH",
+    "fromCurrency": "INR",
+    "toCurrency": "KHR",
+    "fxRate": 50.16,
+    "commission": 0.5
+  },
+  {
+    "senderCountryCode": "IN",
+    "receiverCountryCode": "NO",
+    "fromCurrency": "INR",
+    "toCurrency": "NOK",
+    "fxRate": 0.13,
+    "commission": 0.5
+  },
+  {
+    "senderCountryCode": "IN",
+    "receiverCountryCode": "CG",
+    "fromCurrency": "INR",
+    "toCurrency": "XAF",
+    "fxRate": 7.33,
+    "commission": 0.5
+  },
+  {
+    "senderCountryCode": "IN",
+    "receiverCountryCode": "BR",
+    "fromCurrency": "INR",
+    "toCurrency": "BRL",
+    "fxRate": 0.059,
+    "commission": 0.5
+  },
+  {
+    "senderCountryCode": "IN",
+    "receiverCountryCode": "USAF",
+    "fromCurrency": "INR",
+    "toCurrency": "USD",
+    "fxRate": 0.012,
+    "commission": 0.5
+  },
+  {
+    "senderCountryCode": "IN",
+    "receiverCountryCode": "LY",
+    "fromCurrency": "INR",
+    "toCurrency": "LYD",
+    "fxRate": 0.058,
+    "commission": 0.5
+  },
+  {
+    "senderCountryCode": "IN",
+    "receiverCountryCode": "KZ",
+    "fromCurrency": "INR",
+    "toCurrency": "KZT",
+    "fxRate": 5.59,
+    "commission": 0.5
+  },
+  {
+    "senderCountryCode": "IN",
+    "receiverCountryCode": "CL",
+    "fromCurrency": "INR",
+    "toCurrency": "CLP",
+    "fxRate": 10.33,
+    "commission": 0.5
+  },
+  {
+    "senderCountryCode": "IN",
+    "receiverCountryCode": "TN",
+    "fromCurrency": "INR",
+    "toCurrency": "TND",
+    "fxRate": 0.037,
+    "commission": 0.5
+  },
+  {
+    "senderCountryCode": "IN",
+    "receiverCountryCode": "AQ",
+    "fromCurrency": "INR",
+    "toCurrency": "AQD",
+    "fxRate": 0.044,
+    "commission": 0.5
+  },
+  {
+    "senderCountryCode": "IN",
+    "receiverCountryCode": "SG",
+    "fromCurrency": "INR",
+    "toCurrency": "SGD",
+    "fxRate": 0.016,
+    "commission": 0.5
+  },
+  {
+    "senderCountryCode": "IN",
+    "receiverCountryCode": "AM",
+    "fromCurrency": "INR",
+    "toCurrency": "AMD",
+    "fxRate": 4.67,
+    "commission": 0.5
+  },
+  {
+    "senderCountryCode": "IN",
+    "receiverCountryCode": "MT",
+    "fromCurrency": "INR",
+    "toCurrency": "MTL",
+    "fxRate": 0.0108,
+    "commission": 0.5
+  },
+  {
+    "senderCountryCode": "IN",
+    "receiverCountryCode": "IT",
+    "fromCurrency": "INR",
+    "toCurrency": "EUR",
+    "fxRate": 0.011,
+    "commission": 0.5
+  },
+  {
+    "senderCountryCode": "IN",
+    "receiverCountryCode": "VC",
+    "fromCurrency": "INR",
+    "toCurrency": "XCD",
+    "fxRate": 0.033,
+    "commission": 0.5
+  },
+  {
+    "senderCountryCode": "IN",
+    "receiverCountryCode": "JO",
+    "fromCurrency": "INR",
+    "toCurrency": "JOD",
+    "fxRate": 0.0086,
+    "commission": 0.5
+  },
+  {
+    "senderCountryCode": "IN",
+    "receiverCountryCode": "QA",
+    "fromCurrency": "INR",
+    "toCurrency": "QAR",
+    "fxRate": 0.044,
+    "commission": 0.5
+  },
+  {
+    "senderCountryCode": "IN",
+    "receiverCountryCode": "MS",
+    "fromCurrency": "INR",
+    "toCurrency": "XCD",
+    "fxRate": 0.033,
+    "commission": 0.5
+  },
+  {
+    "senderCountryCode": "IN",
+    "receiverCountryCode": "CV",
+    "fromCurrency": "INR",
+    "toCurrency": "CVE",
+    "fxRate": 1.23,
+    "commission": 0.5
+  },
+  {
+    "senderCountryCode": "IN",
+    "receiverCountryCode": "AU",
+    "fromCurrency": "INR",
+    "toCurrency": "AUD",
+    "fxRate": 0.019,
+    "commission": 0.5
+  },
+  {
+    "senderCountryCode": "IN",
+    "receiverCountryCode": "UM",
+    "fromCurrency": "INR",
+    "toCurrency": "USD",
+    "fxRate": 0.012,
+    "commission": 0.5
+  },
+  {
+    "senderCountryCode": "IN",
+    "receiverCountryCode": "JP",
+    "fromCurrency": "INR",
+    "toCurrency": "JPY",
+    "fxRate": 1.78,
+    "commission": 0.5
+  },
+  {
+    "senderCountryCode": "IN",
+    "receiverCountryCode": "GP",
+    "fromCurrency": "INR",
+    "toCurrency": "EUR",
+    "fxRate": 0.011,
+    "commission": 0.5
+  },
+  {
+    "senderCountryCode": "IN",
+    "receiverCountryCode": "AF",
+    "fromCurrency": "INR",
+    "toCurrency": "AFN",
+    "fxRate": 1,
+    "commission": 0.5
+  },
+  {
+    "senderCountryCode": "IN",
+    "receiverCountryCode": "MV",
+    "fromCurrency": "INR",
+    "toCurrency": "MVR",
+    "fxRate": 0.19,
+    "commission": 0.5
+  },
+  {
+    "senderCountryCode": "IN",
+    "receiverCountryCode": "CC",
+    "fromCurrency": "INR",
+    "toCurrency": "AUD",
+    "fxRate": 0.019,
+    "commission": 0.5
+  },
+  {
+    "senderCountryCode": "IN",
+    "receiverCountryCode": "GB",
+    "fromCurrency": "INR",
+    "toCurrency": "GBP",
+    "fxRate": 0.0096,
+    "commission": 0.5
+  },
+  {
+    "senderCountryCode": "IN",
+    "receiverCountryCode": "IO",
+    "fromCurrency": "INR",
+    "toCurrency": "USD",
+    "fxRate": 0.012,
+    "commission": 0.5
+  },
+  {
+    "senderCountryCode": "IN",
+    "receiverCountryCode": "PK",
+    "fromCurrency": "INR",
+    "toCurrency": "PKR",
+    "fxRate": 3.68,
+    "commission": 0.5
+  },
+  {
+    "senderCountryCode": "IN",
+    "receiverCountryCode": "AW",
+    "fromCurrency": "INR",
+    "toCurrency": "ANG",
+    "fxRate": 0.022,
+    "commission": 0.5
+  },
+  {
+    "senderCountryCode": "IN",
+    "receiverCountryCode": "VE",
+    "fromCurrency": "INR",
+    "toCurrency": "VEF",
+    "fxRate": 38963.3,
+    "commission": 0.5
+  },
+  {
+    "senderCountryCode": "IN",
+    "receiverCountryCode": "ME",
+    "fromCurrency": "INR",
+    "toCurrency": "EUR",
+    "fxRate": 0.011,
+    "commission": 0.5
+  },
+  {
+    "senderCountryCode": "IN",
+    "receiverCountryCode": "BZ",
+    "fromCurrency": "INR",
+    "toCurrency": "BZD",
+    "fxRate": 0.024,
+    "commission": 0.5
+  },
+  {
+    "senderCountryCode": "IN",
+    "receiverCountryCode": "AX",
+    "fromCurrency": "INR",
+    "toCurrency": "EUR",
+    "fxRate": 0.011,
+    "commission": 0.5
+  },
+  {
+    "senderCountryCode": "IN",
+    "receiverCountryCode": "LR",
+    "fromCurrency": "INR",
+    "toCurrency": "LRD",
+    "fxRate": 2.25,
+    "commission": 0.5
+  },
+  {
+    "senderCountryCode": "IN",
+    "receiverCountryCode": "FI",
+    "fromCurrency": "INR",
+    "toCurrency": "EUR",
+    "fxRate": 0.011,
+    "commission": 0.5
+  },
+  {
+    "senderCountryCode": "IN",
+    "receiverCountryCode": "SV",
+    "fromCurrency": "INR",
+    "toCurrency": "SVC",
+    "fxRate": 0.11,
+    "commission": 0.5
+  },
+  {
+    "senderCountryCode": "IN",
+    "receiverCountryCode": "TG",
+    "fromCurrency": "INR",
+    "toCurrency": "XOF",
+    "fxRate": 7.33,
+    "commission": 0.5
+  },
+  {
+    "senderCountryCode": "IN",
+    "receiverCountryCode": "NP",
+    "fromCurrency": "INR",
+    "toCurrency": "NPR",
+    "fxRate": 1.6,
+    "commission": 0.5
+  },
+  {
+    "senderCountryCode": "IN",
+    "receiverCountryCode": "CM",
+    "fromCurrency": "INR",
+    "toCurrency": "XAF",
+    "fxRate": 7.34,
+    "commission": 0.5
+  },
+  {
+    "senderCountryCode": "IN",
+    "receiverCountryCode": "LV",
+    "fromCurrency": "INR",
+    "toCurrency": "LVL",
+    "fxRate": 136.457,
+    "commission": 0.5
+  },
+  {
+    "senderCountryCode": "IN",
+    "receiverCountryCode": "AD",
+    "fromCurrency": "INR",
+    "toCurrency": "EUR",
+    "fxRate": 0.011,
+    "commission": 0.5
+  },
+  {
+    "senderCountryCode": "IN",
+    "receiverCountryCode": "GL",
+    "fromCurrency": "INR",
+    "toCurrency": "DKK",
+    "fxRate": 0.083,
+    "commission": 0.5
+  },
+  {
+    "senderCountryCode": "IN",
+    "receiverCountryCode": "SM",
+    "fromCurrency": "INR",
+    "toCurrency": "EUR",
+    "fxRate": 0.011,
+    "commission": 0.5
+  },
+  {
+    "senderCountryCode": "IN",
+    "receiverCountryCode": "KI",
+    "fromCurrency": "INR",
+    "toCurrency": "AUD",
+    "fxRate": 0.019,
+    "commission": 0.5
+  },
+  {
+    "senderCountryCode": "IN",
+    "receiverCountryCode": "PH",
+    "fromCurrency": "INR",
+    "toCurrency": "PHP",
+    "fxRate": 0.69,
+    "commission": 0.5
+  },
+  {
+    "senderCountryCode": "IN",
+    "receiverCountryCode": "CD",
+    "fromCurrency": "INR",
+    "toCurrency": "CDF",
+    "fxRate": 30.07,
+    "commission": 0.5
+  },
+  {
+    "senderCountryCode": "IN",
+    "receiverCountryCode": "LS",
+    "fromCurrency": "INR",
+    "toCurrency": "LSL",
+    "fxRate": 0.22,
+    "commission": 0.5
+  },
+  {
+    "senderCountryCode": "IN",
+    "receiverCountryCode": "CH",
+    "fromCurrency": "INR",
+    "toCurrency": "CHF",
+    "fxRate": 0.011,
+    "commission": 0.5
+  },
+  {
+    "senderCountryCode": "IN",
+    "receiverCountryCode": "PF",
+    "fromCurrency": "INR",
+    "toCurrency": "XPF",
+    "fxRate": 1.34,
+    "commission": 0.5
+  },
+  {
+    "senderCountryCode": "IN",
+    "receiverCountryCode": "WF",
+    "fromCurrency": "INR",
+    "toCurrency": "XPF",
+    "fxRate": 1.34,
+    "commission": 0.5
+  },
+  {
+    "senderCountryCode": "IN",
+    "receiverCountryCode": "MO",
+    "fromCurrency": "INR",
+    "toCurrency": "MOP",
+    "fxRate": 0.098,
+    "commission": 0.5
+  },
+  {
+    "senderCountryCode": "IN",
+    "receiverCountryCode": "FJ",
+    "fromCurrency": "INR",
+    "toCurrency": "FJD",
+    "fxRate": 0.027,
+    "commission": 0.5
+  },
+  {
+    "senderCountryCode": "IN",
+    "receiverCountryCode": "KP",
+    "fromCurrency": "INR",
+    "toCurrency": "KPW",
+    "fxRate": 10.88,
+    "commission": 0.5
+  },
+  {
+    "senderCountryCode": "IN",
+    "receiverCountryCode": "SJ",
+    "fromCurrency": "INR",
+    "toCurrency": "NOK",
+    "fxRate": 0.13,
+    "commission": 0.5
+  },
+  {
+    "senderCountryCode": "IN",
+    "receiverCountryCode": "AI",
+    "fromCurrency": "INR",
+    "toCurrency": "XCD",
+    "fxRate": 0.033,
+    "commission": 0.5
+  },
+  {
+    "senderCountryCode": "IN",
+    "receiverCountryCode": "PL",
+    "fromCurrency": "INR",
+    "toCurrency": "PLN",
+    "fxRate": 0.05,
+    "commission": 0.5
+  },
+  {
+    "senderCountryCode": "IN",
+    "receiverCountryCode": "CD",
+    "fromCurrency": "INR",
+    "toCurrency": "CDF",
+    "fxRate": 30.07,
+    "commission": 0.5
+  },
+  {
+    "senderCountryCode": "IN",
+    "receiverCountryCode": "NA",
+    "fromCurrency": "INR",
+    "toCurrency": "NAD",
+    "fxRate": 0.22,
+    "commission": 0.5
+  },
+  {
+    "senderCountryCode": "IN",
+    "receiverCountryCode": "JE",
+    "fromCurrency": "INR",
+    "toCurrency": "GBP",
+    "fxRate": 0.0096,
+    "commission": 0.5
+  },
+  {
+    "senderCountryCode": "IN",
+    "receiverCountryCode": "LI",
+    "fromCurrency": "INR",
+    "toCurrency": "CHF",
+    "fxRate": 0.011,
+    "commission": 0.5
+  },
+  {
+    "senderCountryCode": "IN",
+    "receiverCountryCode": "CX",
+    "fromCurrency": "INR",
+    "toCurrency": "AUD",
+    "fxRate": 0.019,
+    "commission": 0.5
+  },
+  {
+    "senderCountryCode": "IN",
+    "receiverCountryCode": "MC",
+    "fromCurrency": "INR",
+    "toCurrency": "EUR",
+    "fxRate": 0.011,
+    "commission": 0.5
+  },
+  {
+    "senderCountryCode": "IN",
+    "receiverCountryCode": "HK",
+    "fromCurrency": "INR",
+    "toCurrency": "HKD",
+    "fxRate": 0.095,
+    "commission": 0.5
+  },
+  {
+    "senderCountryCode": "IN",
+    "receiverCountryCode": "PS",
+    "fromCurrency": "INR",
+    "toCurrency": "JOD",
+    "fxRate": 0.0086,
+    "commission": 0.5
+  },
+  {
+    "senderCountryCode": "IN",
+    "receiverCountryCode": "DK",
+    "fromCurrency": "INR",
+    "toCurrency": "DKK",
+    "fxRate": 0.083,
+    "commission": 0.5
+  },
+  {
+    "senderCountryCode": "IN",
+    "receiverCountryCode": "SA",
+    "fromCurrency": "INR",
+    "toCurrency": "SAR",
+    "fxRate": 0.045,
+    "commission": 0.5
+  },
+  {
+    "senderCountryCode": "IN",
+    "receiverCountryCode": "MO",
+    "fromCurrency": "INR",
+    "toCurrency": "MOP",
+    "fxRate": 0.098,
+    "commission": 0.5
+  },
+  {
+    "senderCountryCode": "IN",
+    "receiverCountryCode": "PW",
+    "fromCurrency": "INR",
+    "toCurrency": "USD",
+    "fxRate": 0.012,
+    "commission": 0.5
+  },
+  {
+    "senderCountryCode": "IN",
+    "receiverCountryCode": "ES",
+    "fromCurrency": "INR",
+    "toCurrency": "EUR",
+    "fxRate": 0.011,
+    "commission": 0.5
+  },
+  {
+    "senderCountryCode": "IN",
+    "receiverCountryCode": "NZ",
+    "fromCurrency": "INR",
+    "toCurrency": "NZD",
+    "fxRate": 0.02,
+    "commission": 0.5
+  },
+  {
+    "senderCountryCode": "IN",
+    "receiverCountryCode": "CI",
+    "fromCurrency": "INR",
+    "toCurrency": "XOF",
+    "fxRate": 7.33,
+    "commission": 0.5
+  },
+  {
+    "senderCountryCode": "IN",
+    "receiverCountryCode": "KY",
+    "fromCurrency": "INR",
+    "toCurrency": "KYD",
+    "fxRate": 0.01,
+    "commission": 0.5
+  },
+  {
+    "senderCountryCode": "IN",
+    "receiverCountryCode": "NF",
+    "fromCurrency": "INR",
+    "toCurrency": "AUD",
+    "fxRate": 0.019,
+    "commission": 0.5
+  },
+  {
+    "senderCountryCode": "IN",
+    "receiverCountryCode": "RO",
+    "fromCurrency": "INR",
+    "toCurrency": "RON",
+    "fxRate": 0.055,
+    "commission": 0.5
+  },
+  {
+    "senderCountryCode": "IN",
+    "receiverCountryCode": "TF",
+    "fromCurrency": "INR",
+    "toCurrency": "EUR",
+    "fxRate": 0.011,
+    "commission": 0.5
+  },
+  {
+    "senderCountryCode": "IN",
+    "receiverCountryCode": "YT",
+    "fromCurrency": "INR",
+    "toCurrency": "EUR",
+    "fxRate": 0.011,
+    "commission": 0.5
+  },
+  {
+    "senderCountryCode": "IN",
+    "receiverCountryCode": "UG",
+    "fromCurrency": "INR",
+    "toCurrency": "UGX",
+    "fxRate": 45,
+    "commission": 0.5
+  },
+  {
+    "senderCountryCode": "IN",
+    "receiverCountryCode": "BI",
+    "fromCurrency": "INR",
+    "toCurrency": "BIF",
+    "fxRate": 34.21,
+    "commission": 0.5
+  },
+  {
+    "senderCountryCode": "IN",
+    "receiverCountryCode": "NU",
+    "fromCurrency": "INR",
+    "toCurrency": "NZD",
+    "fxRate": 0.02,
+    "commission": 0.5
+  },
+  {
+    "senderCountryCode": "IN",
+    "receiverCountryCode": "BB",
+    "fromCurrency": "INR",
+    "toCurrency": "BBD",
+    "fxRate": 0.024,
+    "commission": 0.5
+  },
+  {
+    "senderCountryCode": "IN",
+    "receiverCountryCode": "KW",
+    "fromCurrency": "INR",
+    "toCurrency": "KWD",
+    "fxRate": 0.0037,
+    "commission": 0.5
+  },
+  {
+    "senderCountryCode": "IN",
+    "receiverCountryCode": "LU",
+    "fromCurrency": "INR",
+    "toCurrency": "EUR",
+    "fxRate": 0.011,
+    "commission": 0.5
+  },
+  {
+    "senderCountryCode": "IN",
+    "receiverCountryCode": "LA",
+    "fromCurrency": "INR",
+    "toCurrency": "LAK",
+    "fxRate": 237.37,
+    "commission": 0.5
+  },
+  {
+    "senderCountryCode": "IN",
+    "receiverCountryCode": "RE",
+    "fromCurrency": "INR",
+    "toCurrency": "EUR",
+    "fxRate": 0.011,
+    "commission": 0.5
+  },
+  {
+    "senderCountryCode": "IN",
+    "receiverCountryCode": "ER",
+    "fromCurrency": "INR",
+    "toCurrency": "ETB",
+    "fxRate": 0.67,
+    "commission": 0.5
+  },
+  {
+    "senderCountryCode": "IN",
+    "receiverCountryCode": "VU",
+    "fromCurrency": "INR",
+    "toCurrency": "VUV",
+    "fxRate": 1.43,
+    "commission": 0.5
+  },
+  {
+    "senderCountryCode": "IN",
+    "receiverCountryCode": "GF",
+    "fromCurrency": "INR",
+    "toCurrency": "EUR",
+    "fxRate": 0.011,
+    "commission": 0.5
+  },
+  {
+    "senderCountryCode": "IN",
+    "receiverCountryCode": "LK",
+    "fromCurrency": "INR",
+    "toCurrency": "LKR",
+    "fxRate": 3.89,
+    "commission": 0.5
+  },
+  {
+    "senderCountryCode": "IN",
+    "receiverCountryCode": "BG",
+    "fromCurrency": "INR",
+    "toCurrency": "BGN",
+    "fxRate": 0.022,
+    "commission": 0.5
+  },
+  {
+    "senderCountryCode": "IN",
+    "receiverCountryCode": "GS",
+    "fromCurrency": "INR",
+    "toCurrency": "GBP",
+    "fxRate": 0.0096,
+    "commission": 0.5
+  },
+  {
+    "senderCountryCode": "IN",
+    "receiverCountryCode": "MD",
+    "fromCurrency": "INR",
+    "toCurrency": "MDL",
+    "fxRate": 0.22,
+    "commission": 0.5
+  },
+  {
+    "senderCountryCode": "IN",
+    "receiverCountryCode": "TH",
+    "fromCurrency": "INR",
+    "toCurrency": "THB",
+    "fxRate": 0.42,
+    "commission": 0.5
+  },
+  {
+    "senderCountryCode": "IN",
+    "receiverCountryCode": "MX",
+    "fromCurrency": "INR",
+    "toCurrency": "MXN",
+    "fxRate": 0.2,
+    "commission": 0.5
+  },
+  {
+    "senderCountryCode": "IN",
+    "receiverCountryCode": "GW",
+    "fromCurrency": "INR",
+    "toCurrency": "XOF",
+    "fxRate": 7.33,
+    "commission": 0.5
+  },
+  {
+    "senderCountryCode": "IN",
+    "receiverCountryCode": "VI",
+    "fromCurrency": "INR",
+    "toCurrency": "USD",
+    "fxRate": 0.012,
+    "commission": 0.5
+  },
+  {
+    "senderCountryCode": "IN",
+    "receiverCountryCode": "GD",
+    "fromCurrency": "INR",
+    "toCurrency": "XCD",
+    "fxRate": 0.033,
+    "commission": 0.5
+  },
+  {
+    "senderCountryCode": "IN",
+    "receiverCountryCode": "SN",
+    "fromCurrency": "INR",
+    "toCurrency": "XOF",
+    "fxRate": 7.33,
+    "commission": 0.5
+  },
+  {
+    "senderCountryCode": "IN",
+    "receiverCountryCode": "BO",
+    "fromCurrency": "INR",
+    "toCurrency": "BOB",
+    "fxRate": 0.084,
+    "commission": 0.5
+  },
+  {
+    "senderCountryCode": "IN",
+    "receiverCountryCode": "YE",
+    "fromCurrency": "INR",
+    "toCurrency": "YER",
+    "fxRate": 3.03,
+    "commission": 0.5
+  },
+  {
+    "senderCountryCode": "IN",
+    "receiverCountryCode": "IS",
+    "fromCurrency": "INR",
+    "toCurrency": "ISK",
+    "fxRate": 1.59,
+    "commission": 0.5
+  },
+  {
+    "senderCountryCode": "IN",
+    "receiverCountryCode": "BM",
+    "fromCurrency": "INR",
+    "toCurrency": "BMD",
+    "fxRate": 0.012,
+    "commission": 0.5
+  },
+  {
+    "senderCountryCode": "IN",
+    "receiverCountryCode": "MG",
+    "fromCurrency": "INR",
+    "toCurrency": "MGA",
+    "fxRate": 54.68,
+    "commission": 0.5
+  },
+  {
+    "senderCountryCode": "IN",
+    "receiverCountryCode": "SC",
+    "fromCurrency": "INR",
+    "toCurrency": "SCR",
+    "fxRate": 0.16,
+    "commission": 0.5
+  },
+  {
+    "senderCountryCode": "IN",
+    "receiverCountryCode": "GA",
+    "fromCurrency": "INR",
+    "toCurrency": "XAF",
+    "fxRate": 7.34,
+    "commission": 0.5
+  },
+  {
+    "senderCountryCode": "IN",
+    "receiverCountryCode": "BS",
+    "fromCurrency": "INR",
+    "toCurrency": "BSD",
+    "fxRate": 0.012,
+    "commission": 0.5
+  },
+  {
+    "senderCountryCode": "IN",
+    "receiverCountryCode": "IL",
+    "fromCurrency": "INR",
+    "toCurrency": "ILS",
+    "fxRate": 0.046,
+    "commission": 0.5
+  },
+  {
+    "senderCountryCode": "IN",
+    "receiverCountryCode": "MR",
+    "fromCurrency": "INR",
+    "toCurrency": "MRO",
+    "fxRate": 0.46,
+    "commission": 0.5
+  },
+  {
+    "senderCountryCode": "IN",
+    "receiverCountryCode": "DE",
+    "fromCurrency": "INR",
+    "toCurrency": "EUR",
+    "fxRate": 0.011,
+    "commission": 0.5
+  },
+  {
+    "senderCountryCode": "IN",
+    "receiverCountryCode": "CZ",
+    "fromCurrency": "INR",
+    "toCurrency": "CZK",
+    "fxRate": 0.27,
+    "commission": 0.5
+  },
+  {
+    "senderCountryCode": "IN",
+    "receiverCountryCode": "SH",
+    "fromCurrency": "INR",
+    "toCurrency": "GBP",
+    "fxRate": 0.0096,
+    "commission": 0.5
+  },
+  {
+    "senderCountryCode": "IN",
+    "receiverCountryCode": "VG",
+    "fromCurrency": "INR",
+    "toCurrency": "USD",
+    "fxRate": 0.012,
+    "commission": 0.5
+  },
+  {
+    "senderCountryCode": "IN",
+    "receiverCountryCode": "AN",
+    "fromCurrency": "INR",
+    "toCurrency": "ANG",
+    "fxRate": 0.022,
+    "commission": 0.5
+  },
+  {
+    "senderCountryCode": "IN",
+    "receiverCountryCode": "PY",
+    "fromCurrency": "INR",
+    "toCurrency": "PYG",
+    "fxRate": 87.98,
+    "commission": 0.5
+  },
+  {
+    "senderCountryCode": "IN",
+    "receiverCountryCode": "SL",
+    "fromCurrency": "INR",
+    "toCurrency": "SLL",
+    "fxRate": 238.94,
+    "commission": 0.5
+  },
+  {
+    "senderCountryCode": "IN",
+    "receiverCountryCode": "BH",
+    "fromCurrency": "INR",
+    "toCurrency": "BHD",
+    "fxRate": 0.0046,
+    "commission": 0.5
+  },
+  {
+    "senderCountryCode": "IN",
+    "receiverCountryCode": "ST",
+    "fromCurrency": "INR",
+    "toCurrency": "STD",
+    "fxRate": 0.016,
+    "commission": 0.5
+  },
+  {
+    "senderCountryCode": "IN",
+    "receiverCountryCode": "GU",
+    "fromCurrency": "INR",
+    "toCurrency": "USD",
+    "fxRate": 0.012,
+    "commission": 0.5
+  },
+  {
+    "senderCountryCode": "IN",
+    "receiverCountryCode": "CK",
+    "fromCurrency": "INR",
+    "toCurrency": "NZD",
+    "fxRate": 0.02,
+    "commission": 0.5
+  },
+  {
+    "senderCountryCode": "IN",
+    "receiverCountryCode": "BT",
+    "fromCurrency": "INR",
+    "toCurrency": "INR",
+    "fxRate": 1,
+    "commission": 0.5
+  },
+  {
+    "senderCountryCode": "IN",
+    "receiverCountryCode": "GT",
+    "fromCurrency": "INR",
+    "toCurrency": "GTQ",
+    "fxRate": 0.095,
+    "commission": 0.5
+  },
+  {
+    "senderCountryCode": "IN",
+    "receiverCountryCode": "LB",
+    "fromCurrency": "INR",
+    "toCurrency": "LBP",
+    "fxRate": 181.53,
+    "commission": 0.5
+  },
+  {
+    "senderCountryCode": "IN",
+    "receiverCountryCode": "UY",
+    "fromCurrency": "INR",
+    "toCurrency": "UYU",
+    "fxRate": 0.46,
+    "commission": 0.5
+  },
+  {
+    "senderCountryCode": "IN",
+    "receiverCountryCode": "NR",
+    "fromCurrency": "INR",
+    "toCurrency": "AUD",
+    "fxRate": 0.019,
+    "commission": 0.5
+  },
+  {
+    "senderCountryCode": "IN",
+    "receiverCountryCode": "US",
+    "fromCurrency": "INR",
+    "toCurrency": "USD",
+    "fxRate": 0.012,
+    "commission": 0.5
+  },
+  {
+    "senderCountryCode": "IN",
+    "receiverCountryCode": "IQ",
+    "fromCurrency": "INR",
+    "toCurrency": "IQD",
+    "fxRate": 15.84,
+    "commission": 0.5
+  },
+  {
+    "senderCountryCode": "IN",
+    "receiverCountryCode": "RW",
+    "fromCurrency": "INR",
+    "toCurrency": "RWF",
+    "fxRate": 14.41,
+    "commission": 0.5
+  },
+  {
+    "senderCountryCode": "IN",
+    "receiverCountryCode": "DM",
+    "fromCurrency": "INR",
+    "toCurrency": "XCD",
+    "fxRate": 0.033,
+    "commission": 0.5
+  },
+  {
+    "senderCountryCode": "IN",
+    "receiverCountryCode": "TC",
+    "fromCurrency": "INR",
+    "toCurrency": "USD",
+    "fxRate": 0.012,
+    "commission": 0.5
+  },
+  {
+    "senderCountryCode": "IN",
+    "receiverCountryCode": "AS",
+    "fromCurrency": "INR",
+    "toCurrency": "EUR",
+    "fxRate": 0.011,
+    "commission": 0.5
+  },
+  {
+    "senderCountryCode": "IN",
+    "receiverCountryCode": "UA",
+    "fromCurrency": "INR",
+    "toCurrency": "UAH",
+    "fxRate": 0.45,
+    "commission": 0.5
+  },
+  {
+    "senderCountryCode": "IN",
+    "receiverCountryCode": "CN",
+    "fromCurrency": "INR",
+    "toCurrency": "CNY",
+    "fxRate": 0.088,
+    "commission": 0.5
+  },
+  {
+    "senderCountryCode": "IN",
+    "receiverCountryCode": "SD",
+    "fromCurrency": "INR",
+    "toCurrency": "SDG",
+    "fxRate": 7.28,
+    "commission": 0.5
+  },
+  {
+    "senderCountryCode": "IN",
+    "receiverCountryCode": "MZ",
+    "fromCurrency": "INR",
+    "toCurrency": "MZN",
+    "fxRate": 0.77,
+    "commission": 0.5
+  },
+  {
+    "senderCountryCode": "IN",
+    "receiverCountryCode": "BE",
+    "fromCurrency": "INR",
+    "toCurrency": "EUR",
+    "fxRate": 0.011,
+    "commission": 0.5
+  },
+  {
+    "senderCountryCode": "IN",
+    "receiverCountryCode": "OM",
+    "fromCurrency": "INR",
+    "toCurrency": "OMR",
+    "fxRate": 0.0047,
+    "commission": 0.5
+  },
+  {
+    "senderCountryCode": "IN",
+    "receiverCountryCode": "LC",
+    "fromCurrency": "INR",
+    "toCurrency": "XCD",
+    "fxRate": 0.033,
+    "commission": 0.5
+  },
+  {
+    "senderCountryCode": "IN",
+    "receiverCountryCode": "PG",
+    "fromCurrency": "INR",
+    "toCurrency": "PGK",
+    "fxRate": 0.044,
+    "commission": 0.5
+  },
+  {
+    "senderCountryCode": "IN",
+    "receiverCountryCode": "WS",
+    "fromCurrency": "INR",
+    "toCurrency": "EUR",
+    "fxRate": 0.011,
+    "commission": 0.5
+  },
+  {
+    "senderCountryCode": "IN",
+    "receiverCountryCode": "BY",
+    "fromCurrency": "INR",
+    "toCurrency": "BYR",
+    "fxRate": 0.031,
+    "commission": 0.5
+  },
+  {
+    "senderCountryCode": "IN",
+    "receiverCountryCode": "BV",
+    "fromCurrency": "INR",
+    "toCurrency": "NOK",
+    "fxRate": 0.13,
+    "commission": 0.5
+  },
+  {
+    "senderCountryCode": "IN",
+    "receiverCountryCode": "SR",
+    "fromCurrency": "INR",
+    "toCurrency": "SRD",
+    "fxRate": 0.46,
+    "commission": 0.5
+  },
+  {
+    "senderCountryCode": "IN",
+    "receiverCountryCode": "CO",
+    "fromCurrency": "INR",
+    "toCurrency": "COP",
+    "fxRate": 49.79,
+    "commission": 0.5
+  },
+  {
+    "senderCountryCode": "IN",
+    "receiverCountryCode": "IN",
+    "fromCurrency": "INR",
+    "toCurrency": "INR",
+    "fxRate": 1,
+    "commission": 0.5
+  },
+  {
+    "senderCountryCode": "IN",
+    "receiverCountryCode": "TM",
+    "fromCurrency": "INR",
+    "toCurrency": "TMT",
+    "fxRate": 0.042,
+    "commission": 0.5
+  },
+  {
+    "senderCountryCode": "IN",
+    "receiverCountryCode": "MN",
+    "fromCurrency": "INR",
+    "toCurrency": "MNT",
+    "fxRate": 41.74,
+    "commission": 0.5
+  },
+  {
+    "senderCountryCode": "IN",
+    "receiverCountryCode": "SZ",
+    "fromCurrency": "INR",
+    "toCurrency": "SZL",
+    "fxRate": 0.22,
+    "commission": 0.5
+  },
+  {
+    "senderCountryCode": "IN",
+    "receiverCountryCode": "PR",
+    "fromCurrency": "INR",
+    "toCurrency": "USD",
+    "fxRate": 0.012,
+    "commission": 0.5
+  },
+  {
+    "senderCountryCode": "IN",
+    "receiverCountryCode": "AT",
+    "fromCurrency": "INR",
+    "toCurrency": "EUR",
+    "fxRate": 0.011,
+    "commission": 0.5
+  },
+  {
+    "senderCountryCode": "IN",
+    "receiverCountryCode": "KE",
+    "fromCurrency": "INR",
+    "toCurrency": "KES",
+    "fxRate": 1.76,
+    "commission": 0.5
+  },
+  {
+    "senderCountryCode": "IN",
+    "receiverCountryCode": "GQ",
+    "fromCurrency": "INR",
+    "toCurrency": "XAF",
+    "fxRate": 7.34,
+    "commission": 0.5
+  },
+  {
+    "senderCountryCode": "IN",
+    "receiverCountryCode": "AG",
+    "fromCurrency": "INR",
+    "toCurrency": "XCD",
+    "fxRate": 0.033,
+    "commission": 0.5
+  },
+  {
+    "senderCountryCode": "IN",
+    "receiverCountryCode": "MQ",
+    "fromCurrency": "INR",
+    "toCurrency": "EUR",
+    "fxRate": 0.011,
+    "commission": 0.5
+  },
+  {
+    "senderCountryCode": "IN",
+    "receiverCountryCode": "AL",
+    "fromCurrency": "INR",
+    "toCurrency": "ALL",
+    "fxRate": 1.23,
+    "commission": 0.5
+  },
+  {
+    "senderCountryCode": "IN",
+    "receiverCountryCode": "AE",
+    "fromCurrency": "INR",
+    "toCurrency": "AED",
+    "fxRate": 0.044,
+    "commission": 0.5
+  },
+  {
+    "senderCountryCode": "IN",
+    "receiverCountryCode": "NI",
+    "fromCurrency": "INR",
+    "toCurrency": "NIO",
+    "fxRate": 0.44,
+    "commission": 0.5
+  },
+  {
+    "senderCountryCode": "IN",
+    "receiverCountryCode": "NC",
+    "fromCurrency": "INR",
+    "toCurrency": "XPF",
+    "fxRate": 1.34,
+    "commission": 0.5
+  },
+  {
+    "senderCountryCode": "IN",
+    "receiverCountryCode": "BW",
+    "fromCurrency": "INR",
+    "toCurrency": "BWP",
+    "fxRate": 0.16,
+    "commission": 0.5
+  },
+  {
+    "senderCountryCode": "IN",
+    "receiverCountryCode": "AZ",
+    "fromCurrency": "INR",
+    "toCurrency": "AZN",
+    "fxRate": 0.021,
+    "commission": 0.5
+  },
+  {
+    "senderCountryCode": "IN",
+    "receiverCountryCode": "GM",
+    "fromCurrency": "INR",
+    "toCurrency": "GMD",
+    "fxRate": 0.74,
+    "commission": 0.5
+  },
+  {
+    "senderCountryCode": "IN",
+    "receiverCountryCode": "PE",
+    "fromCurrency": "INR",
+    "toCurrency": "PEN",
+    "fxRate": 0.045,
+    "commission": 0.5
+  },
+  {
+    "senderCountryCode": "IN",
+    "receiverCountryCode": "MW",
+    "fromCurrency": "INR",
+    "toCurrency": "MWK",
+    "fxRate": 13.12,
+    "commission": 0.5
+  },
+  {
+    "senderCountryCode": "IN",
+    "receiverCountryCode": "RS",
+    "fromCurrency": "INR",
+    "toCurrency": "RSD",
+    "fxRate": 1.31,
+    "commission": 0.5
+  },
+  {
+    "senderCountryCode": "IN",
+    "receiverCountryCode": "FK",
+    "fromCurrency": "INR",
+    "toCurrency": "FKP",
+    "fxRate": 0.0095,
+    "commission": 0.5
+  },
+  {
+    "senderCountryCode": "IN",
+    "receiverCountryCode": "HT",
+    "fromCurrency": "INR",
+    "toCurrency": "HTG",
+    "fxRate": 1.64,
+    "commission": 0.5
+  },
+  {
+    "senderCountryCode": "IN",
+    "receiverCountryCode": "CU",
+    "fromCurrency": "INR",
+    "toCurrency": "CUP",
+    "fxRate": 0.29,
+    "commission": 0.5
+  },
+  {
+    "senderCountryCode": "IN",
+    "receiverCountryCode": "HU",
+    "fromCurrency": "INR",
+    "toCurrency": "HUF",
+    "fxRate": 4.25,
+    "commission": 0.5
+  },
+  {
+    "senderCountryCode": "IN",
+    "receiverCountryCode": "HM",
+    "fromCurrency": "INR",
+    "toCurrency": "AUD",
+    "fxRate": 0.019,
+    "commission": 0.5
+  },
+  {
+    "senderCountryCode": "IN",
+    "receiverCountryCode": "TZ",
+    "fromCurrency": "INR",
+    "toCurrency": "TZS",
+    "fxRate": 30.26,
+    "commission": 0.5
+  },
+  {
+    "senderCountryCode": "IN",
+    "receiverCountryCode": "ZM",
+    "fromCurrency": "INR",
+    "toCurrency": "ZMK",
+    "fxRate": 0.24,
+    "commission": 0.5
+  },
+  {
+    "senderCountryCode": "IN",
+    "receiverCountryCode": "CY",
+    "fromCurrency": "INR",
+    "toCurrency": "CYP",
+    "fxRate": 0.011,
+    "commission": 0.5
+  },
+  {
+    "senderCountryCode": "IN",
+    "receiverCountryCode": "EG",
+    "fromCurrency": "INR",
+    "toCurrency": "EGP",
+    "fxRate": 0.37,
+    "commission": 0.5
+  },
+  {
+    "senderCountryCode": "IN",
+    "receiverCountryCode": "MH",
+    "fromCurrency": "INR",
+    "toCurrency": "USD",
+    "fxRate": 0.012,
+    "commission": 0.5
+  },
+  {
+    "senderCountryCode": "IN",
+    "receiverCountryCode": "EH",
+    "fromCurrency": "INR",
+    "toCurrency": "MAD",
+    "fxRate": 0.12,
+    "commission": 0.5
+  },
+  {
+    "senderCountryCode": "IN",
+    "receiverCountryCode": "NG",
+    "fromCurrency": "INR",
+    "toCurrency": "NGN",
+    "fxRate": 9.34,
+    "commission": 0.5
+  },
+  {
+    "senderCountryCode": "IN",
+    "receiverCountryCode": "ML",
+    "fromCurrency": "INR",
+    "toCurrency": "XOF",
+    "fxRate": 7.33,
+    "commission": 0.5
+  },
+  {
+    "senderCountryCode": "IN",
+    "receiverCountryCode": "MY",
+    "fromCurrency": "INR",
+    "toCurrency": "MYR",
+    "fxRate": 0.056,
+    "commission": 0.5
+  },
+  {
+    "senderCountryCode": "IN",
+    "receiverCountryCode": "ET",
+    "fromCurrency": "INR",
+    "toCurrency": "ETB",
+    "fxRate": 0.67,
+    "commission": 0.5
+  },
+  {
+    "senderCountryCode": "IN",
+    "receiverCountryCode": "GE",
+    "fromCurrency": "INR",
+    "toCurrency": "GEL",
+    "fxRate": 0.032,
+    "commission": 0.5
+  },
+  {
+    "senderCountryCode": "IN",
+    "receiverCountryCode": "MA",
+    "fromCurrency": "INR",
+    "toCurrency": "MAD",
+    "fxRate": 0.12,
+    "commission": 0.5
+  },
+  {
+    "senderCountryCode": "IN",
+    "receiverCountryCode": "NE",
+    "fromCurrency": "INR",
+    "toCurrency": "XOF",
+    "fxRate": 7.33,
+    "commission": 0.5
+  },
+  {
+    "senderCountryCode": "IN",
+    "receiverCountryCode": "SY",
+    "fromCurrency": "INR",
+    "toCurrency": "SYP",
+    "fxRate": 16.71,
+    "commission": 0.5
+  },
+  {
+    "senderCountryCode": "IN",
+    "receiverCountryCode": "GH",
+    "fromCurrency": "INR",
+    "toCurrency": "GHS",
+    "fxRate": 0.14,
+    "commission": 0.5
+  },
+  {
+    "senderCountryCode": "IN",
+    "receiverCountryCode": "CA",
+    "fromCurrency": "INR",
+    "toCurrency": "CAD",
+    "fxRate": 0.016,
+    "commission": 0.5
+  },
+  {
+    "senderCountryCode": "IN",
+    "receiverCountryCode": "KN",
+    "fromCurrency": "INR",
+    "toCurrency": "XCD",
+    "fxRate": 0.033,
+    "commission": 0.5
+  },
+  {
+    "senderCountryCode": "IN",
+    "receiverCountryCode": "ZW",
+    "fromCurrency": "INR",
+    "toCurrency": "ZWD",
+    "fxRate": 0.22,
+    "commission": 0.5
+  },
+  {
+    "senderCountryCode": "IN",
+    "receiverCountryCode": "TD",
+    "fromCurrency": "INR",
+    "toCurrency": "XAF",
+    "fxRate": 7.34,
+    "commission": 0.5
+  },
+  {
+    "senderCountryCode": "IN",
+    "receiverCountryCode": "JM",
+    "fromCurrency": "INR",
+    "toCurrency": "JMD",
+    "fxRate": 1.87,
+    "commission": 0.5
+  },
+  {
+    "senderCountryCode": "IN",
+    "receiverCountryCode": "KM",
+    "fromCurrency": "INR",
+    "toCurrency": "KMF",
+    "fxRate": 5.5,
+    "commission": 0.5
+  },
+  {
+    "senderCountryCode": "IN",
+    "receiverCountryCode": "TP",
+    "fromCurrency": "INR",
+    "toCurrency": "IDR",
+    "fxRate": 184.47,
+    "commission": 0.5
+  },
+  {
+    "senderCountryCode": "IN",
+    "receiverCountryCode": "SE",
+    "fromCurrency": "INR",
+    "toCurrency": "SEK",
+    "fxRate": 0.13,
+    "commission": 0.5
+  },
+  {
+    "senderCountryCode": "IN",
+    "receiverCountryCode": "VN",
+    "fromCurrency": "INR",
+    "toCurrency": "VND",
+    "fxRate": 292.67,
+    "commission": 0.5
+  },
+  {
+    "senderCountryCode": "IN",
+    "receiverCountryCode": "AO",
+    "fromCurrency": "INR",
+    "toCurrency": "AOA",
+    "fxRate": 9.98,
+    "commission": 0.5
+  },
+  {
+    "senderCountryCode": "IN",
+    "receiverCountryCode": "DJ",
+    "fromCurrency": "INR",
+    "toCurrency": "DJF",
+    "fxRate": 2.15,
+    "commission": 0.5
+  },
+  {
+    "senderCountryCode": "IN",
+    "receiverCountryCode": "TT",
+    "fromCurrency": "INR",
+    "toCurrency": "TTD",
+    "fxRate": 0.082,
+    "commission": 0.5
+  },
+  {
+    "senderCountryCode": "IN",
+    "receiverCountryCode": "UZ",
+    "fromCurrency": "INR",
+    "toCurrency": "UZS",
+    "fxRate": 146.18,
+    "commission": 0.5
+  },
+  {
+    "senderCountryCode": "IN",
+    "receiverCountryCode": "MU",
+    "fromCurrency": "INR",
+    "toCurrency": "MUR",
+    "fxRate": 0.55,
+    "commission": 0.5
+  },
+  {
+    "senderCountryCode": "IN",
+    "receiverCountryCode": "FM",
+    "fromCurrency": "INR",
+    "toCurrency": "USD",
+    "fxRate": 0.012,
+    "commission": 0.5
+  },
+  {
+    "senderCountryCode": "IN",
+    "receiverCountryCode": "EE",
+    "fromCurrency": "INR",
+    "toCurrency": "EEK",
+    "fxRate": 0.17,
+    "commission": 0.5
+  },
+  {
+    "senderCountryCode": "IN",
+    "receiverCountryCode": "TV",
+    "fromCurrency": "INR",
+    "toCurrency": "AUD",
+    "fxRate": 0.019,
+    "commission": 0.5
+  },
+  {
+    "senderCountryCode": "IN",
+    "receiverCountryCode": "PN",
+    "fromCurrency": "INR",
+    "toCurrency": "NZD",
+    "fxRate": 0.02,
+    "commission": 0.5
+  },
+  {
+    "senderCountryCode": "IN",
+    "receiverCountryCode": "BJ",
+    "fromCurrency": "INR",
+    "toCurrency": "XOF",
+    "fxRate": 7.33,
+    "commission": 0.5
+  },
+  {
+    "senderCountryCode": "IN",
+    "receiverCountryCode": "LT",
+    "fromCurrency": "INR",
+    "toCurrency": "LTL",
+    "fxRate": 25.8,
+    "commission": 0.5
+  },
+  {
+    "senderCountryCode": "IN",
+    "receiverCountryCode": "IR",
+    "fromCurrency": "INR",
+    "toCurrency": "IRR",
+    "fxRate": 511.5,
+    "commission": 0.5
+  },
+  {
+    "senderCountryCode": "IN",
+    "receiverCountryCode": "HR",
+    "fromCurrency": "INR",
+    "toCurrency": "HRK",
+    "fxRate": 0.084,
+    "commission": 0.5
+  },
+  {
+    "senderCountryCode": "IN",
+    "receiverCountryCode": "PT",
+    "fromCurrency": "INR",
+    "toCurrency": "EUR",
+    "fxRate": 0.011,
+    "commission": 0.5
+  },
+  {
+    "senderCountryCode": "IN",
+    "receiverCountryCode": "KR",
+    "fromCurrency": "INR",
+    "toCurrency": "KRW",
+    "fxRate": 16,
+    "commission": 0.5
+  },
+  {
+    "senderCountryCode": "IN",
+    "receiverCountryCode": "TO",
+    "fromCurrency": "INR",
+    "toCurrency": "TOP",
+    "fxRate": 0.029,
+    "commission": 0.5
+  },
+  {
+    "senderCountryCode": "IN",
+    "receiverCountryCode": "LA",
+    "fromCurrency": "INR",
+    "toCurrency": "LAK",
+    "fxRate": 237.37,
+    "commission": 0.5
+  },
+  {
+    "senderCountryCode": "IN",
+    "receiverCountryCode": "GY",
+    "fromCurrency": "INR",
+    "toCurrency": "GYD",
+    "fxRate": 2.53,
+    "commission": 0.5
   }
-
 ]
