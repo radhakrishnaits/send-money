@@ -1,7 +1,7 @@
 package com.altimetrik.wu.sendmoney.service.impl;
 
 import com.altimetrik.wu.sendmoney.dto.request.ReceiverRequest;
-import com.altimetrik.wu.sendmoney.dto.response.ReceiverReponse;
+import com.altimetrik.wu.sendmoney.dto.response.ReceiverResponse;
 import com.altimetrik.wu.sendmoney.entity.Receiver;
 import com.altimetrik.wu.sendmoney.entity.TransferRate;
 import com.altimetrik.wu.sendmoney.repository.TransferRateRepository;
@@ -23,23 +23,23 @@ public class ReceiverServiceImpl implements ReceiverService {
     public TransferRateRepository transferRateRepository;
 
     @Override
-    public ReceiverReponse getReceiverAmount(ReceiverRequest receiverRequest) throws IOException {
+    public ReceiverResponse getReceiverAmount(ReceiverRequest receiverRequest) throws IOException {
         ObjectMapper mapper = new ObjectMapper();
         ClassLoader classLoader = getClass().getClassLoader();
-        ReceiverReponse receiverReponse = new ReceiverReponse();
+        ReceiverResponse receiverResponse = new ReceiverResponse();
         Receiver[] response = mapper.readValue(new File(Objects.requireNonNull(classLoader.getResource("transferRate.json")).getFile()), Receiver[].class);
         List<Receiver> receivers = Arrays.stream(response).filter(receiver -> receiver.getFromCurrency().equals(receiverRequest.getFromCurrency()) && receiver.getToCurrency().equals(receiverRequest.getToCurrency())).collect(Collectors.toList());
         if (!receivers.isEmpty()) {
             Receiver receiver = receivers.get(0);
-            double receivedAmount =receiverRequest.getAmount()-( receiverRequest.getAmount() * receiver.getFxRate() + receiver.getCommission());
-            receiverReponse.setReceiverAmount(receivedAmount);
-            receiverReponse.setCommission(receiver.getCommission());
-            receiverReponse.setFxrate(receiver.getFxRate());
-            receiverReponse.setSenderAmount(receiverRequest.getAmount());
+            double receivedAmount = (receiverRequest.getAmount() * receiver.getFxRate() - receiver.getCommission());
+            receiverResponse.setReceiverAmount(String.valueOf(receivedAmount) + " " + receiver.getToCurrency());
+            receiverResponse.setCommission(receiver.getCommission());
+            receiverResponse.setFxrate(receiver.getFxRate());
+            receiverResponse.setSenderAmount(String.valueOf(receiverRequest.getAmount()) + " " + receiver.getFromCurrency());
 
         }
 
-        return receiverReponse;
+        return receiverResponse;
     }
 
     @Override

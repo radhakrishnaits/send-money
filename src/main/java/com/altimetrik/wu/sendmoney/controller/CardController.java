@@ -26,7 +26,7 @@ public class CardController {
             @ApiResponse(code = 403, message = "Accessing the resource you were trying to reach is forbidden"),
             @ApiResponse(code = 404, message = "The resource you were trying to reach is not found")
     })
-    @PostMapping(value = "/add")
+    @PostMapping(value = "/card/save")
     ResponseEntity<AppResponse<Card>> saveCard(@RequestBody CardRequest cardRequest) {
         return ResponseEntity.ok().body(new AppResponse<>(cardService.saveCard(cardRequest), AppConstants.SUCCESS, HttpStatus.OK));
     }

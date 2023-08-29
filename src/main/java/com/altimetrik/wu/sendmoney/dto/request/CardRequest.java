@@ -5,36 +5,26 @@ import javax.persistence.Id;
 import java.util.Date;
 
 public class CardRequest {
-    private int cardId;
-    private int userId;
-    private Long cardNumber;
+
+    private Integer userId;
+    private String cardNumber;
     private String cardExpiry;
     private String nameOnCard;
-    private String status;
-    private Date modified_on;
     private String modified_by;
 
-    public int getCardId() {
-        return cardId;
-    }
-
-    public void setCardId(int cardId) {
-        this.cardId = cardId;
-    }
-
-    public int getUserId() {
+    public Integer getUserId() {
         return userId;
     }
 
-    public void setUserId(int userId) {
+    public void setUserId(Integer userId) {
         this.userId = userId;
     }
 
-    public Long getCardNumber() {
+    public String getCardNumber() {
         return cardNumber;
     }
 
-    public void setCardNumber(Long cardNumber) {
+    public void setCardNumber(String cardNumber) {
         this.cardNumber = cardNumber;
     }
 
@@ -52,22 +42,6 @@ public class CardRequest {
 
     public void setNameOnCard(String nameOnCard) {
         this.nameOnCard = nameOnCard;
-    }
-
-    public String getStatus() {
-        return status;
-    }
-
-    public void setStatus(String status) {
-        this.status = status;
-    }
-
-    public Date getModified_on() {
-        return modified_on;
-    }
-
-    public void setModified_on(Date modified_on) {
-        this.modified_on = modified_on;
     }
 
     public String getModified_by() {

@@ -1,6 +1,6 @@
 package com.altimetrik.wu.sendmoney.controller;
 
-import com.altimetrik.wu.sendmoney.dto.response.ReceiverReponse;
+import com.altimetrik.wu.sendmoney.dto.response.ReceiverResponse;
 import com.altimetrik.wu.sendmoney.dto.request.ReceiverRequest;
 import com.altimetrik.wu.sendmoney.service.ReceiverService;
 import io.swagger.annotations.ApiOperation;
@@ -14,7 +14,6 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.io.IOException;
-import java.util.List;
 
 @RestController
 @CrossOrigin(origins = "*", allowedHeaders = "*")
@@ -30,15 +29,17 @@ public class ReceiverController {
             @ApiResponse(code = 404, message = "The resource you were trying to reach is not found")
     })
     @GetMapping(value = "/transaction/rates")
-    ResponseEntity<ReceiverReponse> calculateReceiveAmount(@RequestParam String fromCurrency,
-                                                           @RequestParam String toCurrency,
-                                                           @RequestParam double amount) throws IOException {
+    ResponseEntity<ReceiverResponse> calculateReceiveAmount(@RequestParam String fromCurrency,
+                                                            @RequestParam String toCurrency,
+                                                            @RequestParam double amount) throws IOException {
         ReceiverRequest receiverRequest =new ReceiverRequest();
         receiverRequest.setFromCurrency(fromCurrency);
         receiverRequest.setToCurrency(toCurrency);
         receiverRequest.setAmount(amount);
-        ReceiverReponse receiverReponse = receiverService.getReceiverAmount(receiverRequest);
-        return ResponseEntity.ok().body(receiverReponse);
+        ReceiverResponse receiverResponse = receiverService.getReceiverAmount(receiverRequest);
+        return ResponseEntity.ok().body(receiverResponse);
     }
+
+
 
 }

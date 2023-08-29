@@ -22,14 +22,3 @@ public class CardServiceImpl implements CardService {
 }
 
 
-//    @Override
-//    public Card saveCard(ReceiverRequest receiverRequest) {
-//        if(receiverRequest.getFromCurrency()!=null && receiverRequest.getToCurrency() && receiverRequest.getAmount()>0{
-//            throw  new BadHttpRequest("Bad request")
-//        }
-//        Card card= new Card();
-//        card.se
-//        return cardRepository.save();
-//    }
-//}
-

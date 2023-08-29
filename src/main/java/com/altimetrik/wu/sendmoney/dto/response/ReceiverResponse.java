@@ -1,24 +1,24 @@
 package com.altimetrik.wu.sendmoney.dto.response;
 
-public class ReceiverReponse {
-    private double senderAmount;
-    private double receiverAmount;
+public class ReceiverResponse {
+    private String senderAmount;
+    private String receiverAmount;
     private double fxrate;
     private double commission;
 
-    public double getSenderAmount() {
+    public String getSenderAmount() {
         return senderAmount;
     }
 
-    public void setSenderAmount(double senderAmount) {
+    public void setSenderAmount(String senderAmount) {
         this.senderAmount = senderAmount;
     }
 
-    public double getReceiverAmount() {
+    public String getReceiverAmount() {
         return receiverAmount;
     }
 
-    public void setReceiverAmount(double receiverAmount) {
+    public void setReceiverAmount(String receiverAmount) {
         this.receiverAmount = receiverAmount;
     }
 
