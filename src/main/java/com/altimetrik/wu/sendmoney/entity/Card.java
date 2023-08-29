@@ -12,7 +12,7 @@ public class Card {
     @Column(name = "user_id")
     private int userId;
     @Column(name = "card_number")
-    private Long cardNumber;
+    private String cardNumber;
     @Column(name = "card_expiry")
     private String cardExpiry;
     @Column(name = "name_on_card")
@@ -40,11 +40,11 @@ public class Card {
         this.userId = userId;
     }
 
-    public Long getCardNumber() {
+    public String getCardNumber() {
         return cardNumber;
     }
 
-    public void setCardNumber(Long cardNumber) {
+    public void setCardNumber(String cardNumber) {
         this.cardNumber = cardNumber;
     }
 
