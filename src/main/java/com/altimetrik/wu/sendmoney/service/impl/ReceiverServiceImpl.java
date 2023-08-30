@@ -32,10 +32,10 @@ public class ReceiverServiceImpl implements ReceiverService {
         if (!receivers.isEmpty()) {
             Receiver receiver = receivers.get(0);
             double receivedAmount = (receiverRequest.getAmount() * receiver.getFxRate() - receiver.getCommission());
-            receiverResponse.setReceiverAmount(String.valueOf(receivedAmount) + " " + receiver.getToCurrency());
+            receiverResponse.setReceiverAmount(String.valueOf(receivedAmount));
             receiverResponse.setCommission(receiver.getCommission());
             receiverResponse.setFxrate(receiver.getFxRate());
-            receiverResponse.setSenderAmount(String.valueOf(receiverRequest.getAmount()) + " " + receiver.getFromCurrency());
+            receiverResponse.setSenderAmount(String.valueOf(receiverRequest.getAmount()));
 
         }
 
