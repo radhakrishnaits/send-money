@@ -6,17 +6,17 @@ import java.util.Date;
 
 public class CardRequest {
 
-    private Integer userId;
+    private String userId;
     private String cardNumber;
     private String cardExpiry;
     private String nameOnCard;
     private String modified_by;
 
-    public Integer getUserId() {
+    public String getUserId() {
         return userId;
     }
 
-    public void setUserId(Integer userId) {
+    public void setUserId(String userId) {
         this.userId = userId;
     }
 
